@@ -1,0 +1,3 @@
+<?
+$sSectionName="rest-custom";
+?>
