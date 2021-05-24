@@ -3,8 +3,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.ph
 $APPLICATION->SetTitle("Форма");
 CModule::IncludeModule("iblock");
 
-//$email = 'support@megtatec.ru';
-$email = 'silt777@gmail.com';
+$email = 'support@megtatec.ru';
+//$email = 'silt777@gmail.com';
 $sendMail = 0;
 
 $line = '<br>--------------------<br>';
@@ -71,4 +71,41 @@ if(($_GET['name'] != '')and($_GET['email'] != '')){
 
 	$result = $entity_data_class::add($data);
 }
+
+
+/*************Bitrix CRM *****************/
+	$comment = $_GET['comment'].' | ';
+	$comment .= 'Источник: https://megrateс.ru'.$_GET['source'];
+	$queryUrl = 'https://cadflo.bitrix24.ru/rest/9/ylcxpo47n8re735w/crm.lead.add.json';
+	$queryData = [
+				'fields' => array(
+					 "STATUS_ID" => "4",
+					 "TITLE" => $_GET['name'],
+					 "NAME" => $_GET['name'],
+					 "PHONE" => array(array("VALUE" => $_GET['phone'], "VALUE_TYPE" => "WORK" )),
+				     "EMAIL" => array(array("VALUE" => $_GET['email'], "VALUE_TYPE" => "WORK" )),
+					 "UF_CRM_1589450282041" => $comment
+				),
+				'params' => array("REGISTER_SONET_EVENT" => "Y")
+			];
+
+	$queryData = http_build_query($queryData);
+
+	$curl = curl_init();
+	curl_setopt_array($curl, array(
+		CURLOPT_SSL_VERIFYPEER => 0,
+		CURLOPT_POST => 1,
+		CURLOPT_HEADER => 0,
+		CURLOPT_RETURNTRANSFER => 1,
+		CURLOPT_URL => $queryUrl,
+		CURLOPT_POSTFIELDS => $queryData,
+	));
+
+	$result = curl_exec($curl);
+	curl_close($curl);
+
+	$result = json_decode($result, 1);
+
+	if (array_key_exists('error', $result)) return "Ошибка: ".$result['error_description']."<br/>";
+	 else return $result;
 ?>

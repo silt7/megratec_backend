@@ -43,6 +43,10 @@
 dt {
   font-weight: bold;
 }
+.video-right {
+  min-height: 360px;
+  float: right;
+}
 @media only screen and (max-width: 900px) {
 	#pageProduct #tabs-menu{
 		display: none;

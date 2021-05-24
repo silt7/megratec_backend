@@ -14,10 +14,8 @@ $resultArr = [];
 while ($arSearch = $obSearch->Fetch()) {
     $arSearch['BODY_FORMATED'] = strip_tags($arSearch['BODY_FORMATED']);
     $element = CIBlockElement::GetByID($arSearch['ITEM_ID'])->fetch();
-    if($element['IBLOCK_ID'] == 3){
-        $arSearch['URL'] = 'product/'.$arSearch['ITEM_ID'];
-    } else if($element['IBLOCK_ID'] == 4){
-        $arSearch['URL'] = 'new/'.$arSearch['ITEM_ID'];
+    if( ($element['IBLOCK_ID'] == 3) || ($element['IBLOCK_ID'] == 4) ){
+        $arSearch['URL'] = 'product/'.$element['CODE'];
     } else {
         $arSearch['URL'] = $element['CODE'];
     }
