@@ -9,6 +9,7 @@ $sendMail = 0;
 
 $line = '<br>--------------------<br>';
 $text = 'Имя:'.$_GET['name'].$line;
+$text .= 'Компания: '.$_GET['company'].$line;
 $text .= 'Телефон:'.$_GET['phone'].$line;
 $text .= 'Email:'.$_GET['email'].$line;
 $text .= 'Комментарий:'.$_GET['comment'];
@@ -64,9 +65,9 @@ $data = [];
 if(($_GET['name'] != '')and($_GET['email'] != '')){
 	$dt = new DateTime();
 	$data['UF_TITLE'] = 'Заявка';
-	$data['UF_NAME'] = $_GET['name'];
+	$data['UF_NAME'] = $_GET['name'].' Компания: '.$_GET['company'];
 	$data['UF_EMAIL'] = $_GET['email'];
-	$data['UF_MESS'] = $_GET['comment'];
+	$data['UF_MESS'] = $_GET['comment'].'| Телефон: '.$_GET['phone'];
 	$data['UF_DATE'] = $dt;
 
 	$result = $entity_data_class::add($data);
@@ -80,7 +81,7 @@ if(($_GET['name'] != '')and($_GET['email'] != '')){
 	$queryData = [
 				'fields' => array(
 					 "STATUS_ID" => "4",
-					 "TITLE" => $_GET['name'],
+					 "TITLE" => $_GET['name'].' Компания: '.$_GET['company'],
 					 "NAME" => $_GET['name'],
 					 "PHONE" => array(array("VALUE" => $_GET['phone'], "VALUE_TYPE" => "WORK" )),
 				     "EMAIL" => array(array("VALUE" => $_GET['email'], "VALUE_TYPE" => "WORK" )),
