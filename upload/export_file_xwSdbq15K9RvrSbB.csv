@@ -1,0 +1,1590 @@
+IE_XML_ID;IE_NAME;IE_ID;IE_ACTIVE;IE_ACTIVE_FROM;IE_ACTIVE_TO;IE_PREVIEW_PICTURE;IE_PREVIEW_TEXT;IE_PREVIEW_TEXT_TYPE;IE_DETAIL_PICTURE;IE_DETAIL_TEXT;IE_DETAIL_TEXT_TYPE;IE_CODE;IE_SORT;IE_TAGS;IP_PROP1;IP_PROP2;IP_PROP6;IC_GROUP0;IC_GROUP1;IC_GROUP2
+vista;Vista;2;Y;;;;;text;/upload/iblock/2cd/dvt-questa-clock-domain-crossing-cdc-product-is1204740322-640x360.jpg;"<div>
+<img alt=""vista.jpg"" src=""/upload/iblock/ab6/vista.jpg"" title=""vista.jpg"" width=""400"" height=""220"" align=""right"">
+<p>
+ <b>Приложение Vista</b> предназначено для исследования, верификации и виртуального прототипирования архитектуры SoC на системном уровне. В основе его работы лежит механизм транзакций TLM 2.0. Vista дает возможность разработчикам SoC принять оптимальное решение по выбору архитектуры проекта и начать отладку и валидацию аппаратного и программного обеспечения. Эта задача выполняется путем анализа, отладки и прототипирования отдельных решений на системном уровне, еще до разработки RTL кода проекта, что позволяет сократить цикл разработки и повысить вероятность успешного завершения проекта без дополнительных дорогостоящих итераций.
+</p>
+<p>
+	 Современные SoC в области сетевых применений, систем памяти, многоядерных процессоров становятся все более сложными, что делает выбор того или иного архитектурного решения одним из наиболее критичных этапов во всем цикле разработки, непосредственно влияющим на конечный результат и конкурентоспособность. Одной из критичных задач является конфигурирование программно-аппаратной архитектуры многоядерных процессоров и шин межсоединений, что непосредственно влияет на пропускную способность шин и общую производительность системы.
+</p>
+<p>
+	 Vista включает аппарат моделирования на системном уровне, встроенную библиотеку реконфигурируемых блоков, интуитивный графический редактор для “сборки” системы и инструменты для анализа и отладки программно-аппаратных решений.
+</p>
+<p>
+	 Модели отдельных блоков системы можно оптимизировать путем реконфигурации их микро-архитектуры, шин межсоединений и иерархии памяти. Vista использует уникальный механизм анализа временных соотношений при передаче данных, который позволяет быстро протестировать различные конфигурации шин и протоколов обработки данных, не затрагивая при этом общий принцип функционирования системы. Разработчики имеют возможность оптимизировать производительность и потребляемую мощность, начиная с самого верхнего уровня аппроксимации архитектуры системы и кончая выбором конкретных реализаций шин и протоколов. С целью контроля за перемещением данных, специальные объекты (пакеты данных) помечаются кодовыми метками, что позволяет точно “трассировать” перемещение данных по шинам и принимать оптимальные решения по выбору архитектуры и протоколов шин.
+</p>
+<p>
+	 Разработчики могут выполнить статистическое моделирование пропускной способности шины с произвольным трафиком и трафиком, управляемым реальной программой, выполняющейся на модели процессора.
+</p>
+<p>
+	 Vista имеет мощный набор инструментов для исследования и анализа различных характеристик производительности и потребляемой мощности, включая анализ пиковых нагрузок, средних задержек передачи пакетов данных и пропускной способности шин, а также загрузки любого порта, шины или подсистемы.
+</p>
+<p>
+	 Vista позволяет быстро создать прототип системы на основе базовых блоков и проанализировать изменение производительности и потребляемой мощности в зависимости от выбранной архитектуры системы и уровня загрузки. Использование масштабируемых моделей различного уровня обеспечивает оптимизацию производительности и потребляемой мощности на всех уровнях представления проекта от концептуального до реализации RTL кода. Это позволяет оптимизировать проект в кремнии, обеспечить требуемые характеристики при любой загрузке и предусмотреть возможность простой модификации архитектуры при переходе к новому поколению SoC с повышенными требованиями.
+</p>
+<h3>
+Основные преимущества Vista </h3>
+<ul class=""list-check"">
+	<li>
+	Анализ производительности и потребляемой мощности на ранних стадиях проектирования </li>
+	<li>
+	Минимизация рисков и повышение качества проектирования </li>
+	<li>
+	Управление и оптимизация быстродействия и потребляемой мощности на протяжении всего цикла проектирования </li>
+	<li>
+	Глубокое понимание свойств основных алгоритмов масштабирования проекта </li>
+	<li>
+	Использование масштабирования с предсказуемым и контрлируемым результатом </li>
+</ul>
+<h3>
+Основные возможности Vista </h3>
+<ul class=""list-check"">
+	<li>
+	Встроенная библиотека конфигурируемых архитектурных блоков на основе TLM 2.0 - CPU, Шины (AXI, AHB), Память, Кэш, DMAC, INTC и другие </li>
+	<li>
+	Функциональное моделирование на системном уровне с возможностью анализа статистических результатов </li>
+	<li>
+	Контроль перемещения пакетов данных, состояний и атрибутов моделей </li>
+	<li>
+	Графический редактор для “сборки” моделей TLM 2.0 </li>
+	<li>
+	Поддержка программно-аппаратной верификации, включая модели процессоров и средства отладки </li>
+	<li>
+	Отладка и контроль состояния моделей SystemC и TLM 2.0 </li>
+	<li>
+	Расширенные возможности визуализации и генерации отчетов </li>
+	<li>
+	Возможность анализа производительности, потребляемой мощности, задержек, коэффициента использования и текущего состяния </li>
+</ul>
+</div>";html;vista;500;;/upload/iblock/034/1.b93e7aca.svg;;;Системное проектирование;;
+visual_elite;Visual Elite;3;Y;;;;;text;/upload/iblock/e28/visual.png;"<p>
+	 Приложение Visual Elite является средой разработки и интеграции проектов, с помощью которой разработчики и системные архитекторы могут создавать проекты SoC и подсистем на основе блоков, реализованных на SystemC, TLM 2.0 и HDL.
+</p>
+<p>
+	 Ядром Visual Elite является редактор для разработки HDL проектов, дополненный средствами ввода компонентов системного уровня (ESL) и уровня транзакций (TLM). Visual Elite существенно упрощает разработку сложных иерархических проектов, начиная с непривязанных ко времени алгоритмов верхнего уровня и элементов на основе моделей TLM, и, кончая моделями на уровне HDL. Универсальность приложения делает его незаменимым инструментом в маршруте проектирования SoC.
+</p>
+<p>
+	 Основные преимущества
+</p>
+<p>
+	 - Непрерывный процесс разработки проекта от SystemC/TLM до RTL
+</p>
+<p>
+	 - Возможность создания сложных проектов для моделирования на разных уровнях абстракции
+</p>
+<p>
+	 - Простой язык интерфейса облегчает освоение и использование
+</p>
+<p>
+	 - Интуитивные методы проектирования обеспечивают возможность совместного и повторного использования различных моделей
+</p>
+<p>
+	 - Поддержка управления версиями и выпуска документации
+</p>
+<p>
+	 - Поддержка иерархических проектов на основе моделей разного уровня абстракции
+</p>
+<p>
+	 Основные возможности
+</p>
+<p>
+	 - Возможность разработки и интеграции смешанных SystemC/HDL проектов
+</p>
+<p>
+	 - Большой набор текстовых и графических методов ввода проекта
+</p>
+<p>
+	 - Графический редактор для проектов на основе SystemC и TLM моделей
+</p>
+<p>
+	 - Встроенные трансляторы между языками разного уровня абстракции
+</p>
+<p>
+	 - Встроенная библиотека макросов для создания проектов на основе SystemC и HDL с архитектурой Data Flow
+</p>
+<p>
+	 - Автоматическое маппирование языкового представления в нрафическое
+</p>
+<p>
+	 - Поддержка интеграции моделей сторонних поставщиков
+</p>
+<p>
+	 - Интеграция с Vista, Questa и другими платформами мульти-языкового моделирования
+</p>
+<p>
+	 - Интерактивный доступ к документации на приложение
+</p>
+<p>
+	 - Поддержка разработки и сопровождения проекта на протяжении всего жизненного цикла
+</p>
+<p>
+</p>";html;visual_elite;500;;/upload/iblock/651/method-draw-image (1).svg;Нет;;Системное проектирование;;
+catapult_hls;Catapult HLS;4;Y;;;;;text;/upload/iblock/70f/catapulthlscircleflow.jpg;"<div>
+ <img alt=""Catapult Physical Main Screen Shot 640x480.png"" src=""/upload/medialibrary/189/Catapult%20Physical%20Main%20Screen%20Shot%20640x480.png"" title=""Catapult Physical Main Screen Shot 640x480.png"" width=""448"" height=""336"" align=""right"">
+	<p>
+ <b>Приложение Catapult HLS</b> предназначено для создания проектов SoC на уровне стандартного описания ANSI C++ и SystemC и их последующей реализации на уровне RTL.
+	</p>
+	<p>
+		 Catapult HLS выполняет автоматический синтез RTL на основе высокоуровневого описания, что существенно упрощает и ускоряет процесс проектирования и позволяет получить корректный RTL код, снижая последующие затраты на его верификацию. Catapult HLS также имеет встроенный формальный контроль выражений на C/C++ и SystemC, что позволяет верифицировать исходный код до передачи его на этап синтеза.
+	</p>
+	<p>
+		 Встроенный механизм оптимизации потребляемой мощности существенно сокращает ее потребление в динамическом режиме работы объекта. Высоко интерактивный интерфейс обеспечивает полную прозрачность и управляемость процессом синтеза, что позволяет быстро получить RTL код, оптимизированный по производительности, потребляемой мощности и площади кристалла.
+	</p>
+	<h3>
+	Основные преимущества и характеристики </h3>
+	<ul class=""list-check"">
+		<li>
+		Синтез исходного описания на SystemC и ANSI C++ </li>
+		<li>
+		Экономия до 80% “ручного” написания корректного кода RTL, что также сокращает время верификации и отладки </li>
+		<li>
+		За счет быстрого моделирования на системном уровне (в 100-1000 раз быстрее) сокращается время функциональной верификации проекта </li>
+		<li>
+		RTL код на выходе Catapult HLS уже оптимизирован по производительности, потребляемой мощности, площади кристалла и времени на дальнейшую функциональную верификацию. </li>
+	</ul>
+	<h3>
+	Синтез C/C++/SystemC </h3>
+	<p>
+		 На основе стандартного высокоуровневого описания проекта на C/C++/SystemC автоматически синтезирует оптимизированный RTL код, существенно сокращая время на проектирование и функциональную верификацию.
+	</p>
+	<h3>
+	Верификация на системном уровне </h3>
+	<p>
+		 Catapult HLS реализует следующие процедуры верификации:
+	</p>
+	<ul class=""list-check"">
+		<li>
+		Автоматический формальный контроль корректности выражений C/C++/SystemC устраняет возможные ошибки еще до этапа синтеза </li>
+		<li>
+		Сравнение результатов моделирования на системном и RTL уровне, включая метрику полноты функционального покрытия и моделирования ассертов </li>
+		<li>
+		Формальный контроль эквивалентности исходного C/C++/SystemC кода и RTL кода на выходе синтеза </li>
+	</ul>
+	<h3>
+	Оптимизация потребляемой мощности </h3>
+	<p>
+		 Единственное в индустрии решение, которое позволяет оптимизировать мощность на системном уровне. Используя уникальную технологию анализа и оптимизации мощности на системном уровне, обеспечивает возможность выбора варианта с низкой потребляемой мощностью, не потеряв при этом по показателям производительности и площади кристалла.
+	</p>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/Siemens%20SW%20Catapult%20HLS%20HLV%20Platform%20FS%2082981%20C1.pdf"" target=""_blank"">Скачать описание продукта</a></h3>
+</div>";html;catapult_hls;500;;/upload/iblock/65f/catapulth.svg;;;Системное проектирование;;
+questa;Questa;5;Y;;;;Функциональная верификация;text;/upload/iblock/341/dvt-questa-infact-portable-testbench-automation-product-is614863084-640x360.jpg;"<div>
+ <img alt=""questa-verification_640x360.jpg"" src=""/upload/medialibrary/0c3/questa-verification_640x360.jpg"" title=""questa-verification_640x360.jpg"" width=""360"" height=""360"" align=""right"">
+	<p>
+		 <strong>Questa</strong> преобразует процесс функциональной верификации, значительно повышая ее продуктивность и эффективность управления ресурсами. Базируясь на нескольких передовых технологиях и интеграции с системой аппаратной эмуляции Veloce, Questa является идеальным инструментом для верификации сложных систем на кристалле (SoC).
+	</p>
+	<ul class=""list-check"">
+		<li>За счет открытой архитектуры интегрирует в один маршрут несколько отдельных инструментов, которые обеспечивают решение всего спектра задач верификации </li>
+		<li>Разбивает решение комплексной задачи на несколько областей, таких как верификация CDC (Clock Domain Crossing), формальная верификация, смешанное моделирование и другие, что позволяет в короткий срок верифицировать SoC </li>
+		<li>За счет интеграции с Visualizer Debug Environment обеспечивает быструю отладку проектов большой емкости </li>
+		<li>Автоматизирует построение плана верификации и сбор метрик по его покрытию, обеспечивает управление ресурсами и анализ вероятности завершения процесса верификации в заданный срок</li>
+	</ul>
+	<h3>
+		 Достижение полноты покрытия в 10Х-100Х раз быстрее
+	</h3>
+	<p>
+		 Questa обеспечивает интеллектуальную генерацию тестов, обеспечивающих более высокое качество результатов моделирования при меньшем объеме тестов. Это позволяет существенно повысить продуктивность верификации. Опция Verification Management сокращает время регрессионного тестирования и полного покрытия с нескольких часов до нескольких минут. Благодаря автоматической генерации моделей покрытия Questa упрощает разработку тестбенчей.
+	</p>
+	<h3>
+		 Верификация проектов с низкой потребляемой мощностью
+	</h3>
+	<p>
+		 Questa предлагает комплексное решение задачи верификации проектов, которые включают специальные схемы оптимизации потребляемой мощности. Опция Questa Power Aware Simulation (PASim) верифицирует архитектуру схем оптимизации мощности в статическом и динамическом режиме. Опция Questa CDC верифицирует системы с множественными доменами синхронизации и управляемым питанием. Опция Questa Formal обеспечивает исчерпывающий анализ логики в схемах управления питанием. Опция Questa Verification Management контролирует, что верификация проектов с низкой потребляемой мощностью выполняется в заданный срок в общем плане функционального покрытия.
+	</p>
+	<h3>
+		 Мощная унифицированная отладка
+	</h3>
+	<p>
+		 Для современных сложных проектов отладка является одним из важнейших и наиболее критичных этапов верификации. Questa в сочетании с опцией Questa Visualizer Debug для отладки тестбенча и тестируемого объекта и в сочетании с опцией Codelink для программной и программно-аппаратной отладки обеспечивает максимальную производительность, полноту покрытия и автоматизацию всего цикла отладки SoC.
+	</p>
+	<h3>
+		 Технологии формальной верификации
+	</h3>
+	<p>
+		 Опции Questa Formal дают уникальную возможность обнаружения скрытых сложных ошибок и увеличения полноты функционального покрытия за счет исчерпывающего формального анализа. Questa включает широкий спектр опций формальной верификации – от полностью автоматических приложений, таких как верификация проектов с множественными доменами синхронизации, анализ полноты покрытия кода, автоматическая формальная верификация свойств, до верификации ассертов, написанных самим пользователем. Формальные методы в сочетании с традиционным моделированием позволяют повысить продуктивность процесса верификации и уверенность в том, что разрабатываемая SoC полностью верифицирована.
+	</p>
+	<h3>
+		 Самая полная поддержка UVM
+	</h3>
+	<p>
+		 Questa первая платформа функциональной верификации с полной поддержкой методологии UVM, которая обеспечивает автоматизированную разработку универсальных тестбенчей на основе классов SystemVerilog и простой интерфейс с тестируемым объектом в сочетании с кросс-ссылками между тестбенчем, тестируемым RTL кодом и волновой диаграммой.
+	</p>
+	<p>
+		 Questa позволяет просматривать иерархию компонентов проекта, дерева определения классов и другие параметры UVM, специфичные для вашего тестбенча, что упрщает понимание всего окружения процесса верификации. Совместно с опциями UVM Framework, UVM Connect и Questa VIP платформа Questa предоставляет инженеру все необходимое для качественной и быстрой функциональной верификации тестируемого проекта.
+	</p>
+	<h3>
+		 Функциональная безопасность по стандарту ISO 26262
+	</h3>
+	<p>
+		 Компания SGS-TUV Saar, специализирующаяся на квалификации средств проектирования и верификации для критичных по безопасности проектах, сертифицировала платформу Questa, включая опции Questa Verification Management и Questa CDC, как обеспечивающие высокий уровень функциональной безопасности и надежности для всех проектов, требующих сертификата ISO 26262. Процесс моделирования с помощью Questa обеспечивает исчерпывающую верификацию для проектов, критичных по безопасности. Опция Questa Verification Management позволяет контролировать полноту функционального покрытия путем сбора и анализа соответствующих метрик. Опция Questa CDC обнаруживает и исправляет все случаи возникновения эффекта метастабильности в проектах с множественными доменами синхронизации.
+	</p>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/questa-rus.pdf"" target=""_blank"">Скачать описание продукта</a></h3>
+</div>";html;questa;500;;/upload/iblock/f74/QUESTA.svg;Да;Нет;Функциональная верификация;;
+questa_infact;Questa inFact;6;Y;;;;;text;/upload/iblock/ebe/QUESTA_infact.jpg;"<p>
+	 Приложение Questa InFact предназначено для генерации портируемых тестовых воздействий. Оно повышает уровень абстракции верификации и позволяет пользователям в автоматическом режиме создавать различные сценарии для тестирования на уровне блоков, подсистем и всей SoC. Основанное на известной и широко апробированной технологии генерации произвольных тестов с ограничениями, приложение Questa InFact c помощью механизма портируемых тестовых воздействий, обеспечивает дополнительное повышение эффективности, полноты покрытия и скорости верификации.
+</p>
+<p>
+	 Приложение Questa InFact компании Mentor A Siemens Business было первым успешным коммерческим приложением, реализующим технологию портируемых тестов. Входной информацией для приложения является спецификация с описанием назначения данного теста, на основе которой автоматически генерируются тестовые вектора и необходимое покрытие для любого объекта, от отдельных блоков до всей SoC в целом. Сгенерированные тесты могут быть использованы не только на любом уровне иерархии проекта, но и на любой платформе верификации, включая моделирование, аппаратную эмуляцию, прототипирование на FPGA, валидацию в кремнии на готовых кристаллах в лабораторных условиях. При этом тесты оптимизируются под каждый индивидуальный проект. В целом Questa InFact предлагает следующие возможности:
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Основанную на теории графов технологию для ускоренного достижения полноты функционального покрытия и обнаружения максимально возможного числа ошибок
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Интегрированную среду разработки, редактирования и визуализации моделей портируемых тестов
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Интерактивную среду для предварительной отладки (до моделирования) моделей портируемых тестов
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Средства для импорта ограничений и переменных генерации произвольных тестов из классов SystemVerilog
+</p>
+<p>
+</p>";html;questa_infact;500;;/upload/iblock/468/QUESTA_infact.svg;Нет;;Функциональная верификация;;
+questa_formal;Questa Formal;7;Y;;;;;text;/upload/iblock/5b5/questa_formal.png;"<p class=""MsoNormal"">
+ <span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"">Набор приложений </span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"" lang=""EN-US"">Questa</span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"" lang=""EN-US""> </span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"" lang=""EN-US"">Formal</span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"" lang=""EN-US""> </span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"">дополняет традиционное моделирование </span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"" lang=""EN-US"">RTL</span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"" lang=""EN-US""> </span><span style=""font-size: 14pt; line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"">кода формальным анализом поведения объекта для обнаружения возможных состояний, которые могут привести к ошибке. Такой подход позволяет выявить ошибки, которые были пропущены при моделировании, и обеспечить полностью корректную работу блоков управляющей логики.</span>
+</p>
+<p class=""MsoNormal"">
+ <span style=""font-size:14.0pt;line-height:107%; font-family:&quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Questa</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family: &quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Formal</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">может быть использовано для формальной верификации отдельных блоков проекта, как только они будут готовы и еще до их интеграции в </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US"" lang=""EN-US"">SoC</span><span style=""font-size:14.0pt;line-height: 107%;font-family:&quot;Times New Roman&quot;,serif""> и до разработки инфраструктуры (тестбенча) для моделирования. Анализируя одно и тоже </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US"" lang=""EN-US"">RTL</span><span style=""font-size:14.0pt; line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">описание, что и система моделирования, а также полную интеграцию с унифицированной базой данных покрытия (</span><span style=""font-size:14.0pt;line-height: 107%;font-family:&quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">USDB</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">– </span><span style=""font-size:14.0pt;line-height:107%;font-family: &quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Unified</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family: &quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Coverage</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family: &quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Database</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">), </span><span style=""font-size:14.0pt;line-height:107%;font-family: &quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Questa</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US"" lang=""EN-US"">Formal</span><span style=""font-size:14.0pt; line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">является превосходным инструментом для поиска и исправления ошибок и, в конечном счете, для ускорения полноты функционального покрытия.</span>
+</p>
+<p class=""MsoNormal"">
+ <b><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">Как работает формальная верификация</span></b>
+</p>
+<p class=""MsoNormal"">
+ <span style=""font-size:14.0pt;line-height:107%; font-family:&quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Questa</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family: &quot;Times New Roman&quot;,serif;mso-ansi-language:EN-US"" lang=""EN-US"">Formal</span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">анализирует поведение тестируемого объекта и идентифицирует все состояния, в которые объект может попасть из текущего состояния. Данный подход позволяет исследовать всю “ширину” множества состояний, в отличие от традиционного моделирования, которое анализирует “глубину” продвижения объекта из текущего состояния под действием подаваемых тестовых векторов.</span>
+</p>
+<p class=""MsoNormal"">
+ <span style=""font-size:14.0pt;line-height:107%;font-family: &quot;Times New Roman&quot;,serif"">Таким образом </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US"" lang=""EN-US"">Questa</span><span style=""font-size:14.0pt; line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif; mso-ansi-language:EN-US"" lang=""EN-US"">Formal</span><span style=""font-size:14.0pt; line-height:107%;font-family:&quot;Times New Roman&quot;,serif"" lang=""EN-US""> </span><span style=""font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif"">позволяет обнаружить все ошибки, возникающие при переключении текущего состояния во все возможные смежные состояния без использования тестовых воздействий для обнаружения этих ошибок. Это обеспечивает проверку безошибочного функционирования объекта при всех возможных сочетаниях входных воздействий. В то же время такой подход по существу позволяет обнаружить труднодостижимые при моделировании состояния, ускоряя достижение полноты покрытия.</span>
+</p>
+<p class=""MsoNormal"" style=""margin-bottom:16.8pt;line-height:normal"">
+ <b><span style=""font-size:14.0pt;font-family: &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2D373C; mso-fareast-language:RU"">Автоматическое решение по “нажатию кнопки”</span></b>
+</p>
+<p class=""MsoNormal"" style=""margin-bottom:16.8pt;line-height:normal"">
+ <span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2D373C;mso-ansi-language:EN-US; mso-fareast-language:RU"" lang=""EN-US"">Questa</span><span style=""font-size:14.0pt; font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;; color:#2D373C;mso-fareast-language:RU"" lang=""EN-US""> </span><span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;;color:#2D373C;mso-ansi-language:EN-US;mso-fareast-language: RU"" lang=""EN-US"">Formal</span><span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2D373C;mso-fareast-language: RU"" lang=""EN-US""> </span><span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2D373C;mso-fareast-language: RU"">это простой в использовании набор приложений следующего поколения, для верификации сложных “скрытых” ошибок. Например, приложение </span><span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2D373C;mso-ansi-language:EN-US; mso-fareast-language:RU"" lang=""EN-US"">Questa</span><span style=""font-size:14.0pt; font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;; color:#2D373C;mso-fareast-language:RU"" lang=""EN-US""> </span><span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;;color:#2D373C;mso-ansi-language:EN-US;mso-fareast-language: RU"" lang=""EN-US"">X</span><span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2D373C;mso-fareast-language: RU"">-</span><span style=""font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;color:#2D373C;mso-ansi-language:EN-US; mso-fareast-language:RU"" lang=""EN-US"">Check</span><span style=""font-size:14.0pt; font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;; color:#2D373C;mso-fareast-language:RU"" lang=""EN-US""> </span><span style=""font-size:14.0pt; font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;; color:#2D373C;mso-fareast-language:RU"">использует формальные алгоритмы для исчерпывающего решения проблемы распространения неопределенного состояния сигнала Х для двух вариантов – оптимистического и пессимистического. Эта задача не может быть решена методом традиционного моделирования.</span>
+</p>";html;questa_formal;500;;/upload/iblock/c45/questa_formal.svg;;;Функциональная верификация;;
+questa_vip;Questa VIP;8;Y;;;;;text;/upload/iblock/216/QVIP.png;"<p>
+	 В настоящее время функциональная верификация становится наиболее сложным и затратным этапом проектирования систем-на-кристалле (SoC). Определяющим фактором становится время выхода изделия на рынок. При этом усложнение проектов предъявляет все более высокие требования к функциональной верификации, затрагивая и такие смежные области, как снижение потребляемой мощности при одновременном увеличении производительности, защита интеллектуальной собственности, верификация корректного функционирования объекта в критичных по безопасности проектах и т.п. Учитывая все вышесказанное, функциональная верификация занимает 75-80% всего цикла проектирования и становится доминирующим фактором для своевременно выхода изделия на рынок.
+</p>
+<p>
+	 Библиотека моделей IP блоков (Questa VIP) для верификации компании Mentor A Siemens Business вносит весомый вклад в решение проблемы функциональной верификации, предлагая верифицированные модели стандартных протоколов, которые могут быть использованы разработчиками для верификации своих собственных блоков, работающих в связке со стандартными IP. Поскольку эти модели уже многократно проверены и сертифицированы, разработчик может быть уверен, что интерфейс DUT (Design-under-Test)-IP работает корректно. Questa VIP обеспечивает:
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Совместимость с методологией UVM
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Поддержку всех основных симуляторов
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Наличие готовых тестовых последовательностей для тестирования интерфейса в открытом формате
+</p>
+<p>
+	 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Поддержку методологии планирования тестов и контроля полноты покрытия
+</p>
+<p>
+	 Поддержка стандарта UVM обеспечивает возможность многократного использования моделей IP блоков стандартных интерфейсов для функциональной верификации, включая весь необходимый инструментарий для моделирования, отладки и оценки полноты покрытия, что существенно ускоряет процесс верификации.
+</p>
+<p>
+	 Questa VIP повышает качество и сокращает время верификации за счет использования сертифицированной библиотеки моделей стандартных интерфейсов. Это освобождает инженеров от рутинной работы по созданию, отладке и верификации таких моделей, например, моделей стандартных шин (BFM – Bus Functional Models) и других компонентов верификации, позволяя им сосредоточиться на уникальной части проекта.
+</p>
+<p>
+</p>";html;questa_vip;500;;/upload/iblock/e55/QVIP.svg;;;Функциональная верификация;;
+visualizer;Visualizer;9;Y;;;;;text;/upload/iblock/fb8/visualizer.jpg;"<p>
+	 Приложение <span style=""color: #2d373c;"">Visualizer</span><span style=""color: #2d373c;"">™ </span><span style=""color: #2d373c;"">Debug</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">Environment</span><span style=""color: #2d373c;""> – это высокопроизводительная масштабируемая контекстно-ориентированная среда отладки тестируемого объекта и тестбенча, которая поддерживает все виды функциональной верификации, включая моделирование, аппаратную эмуляцию и прототипирование, а также анализ ассертов и потребляемой мощности.</span>
+</p>
+<p>
+ <span style=""color: #2d373c;"">Приложение отличается простотой использования и автоматизирует процесс отладки в процессе верификации </span><span style=""color: #2d373c;"">SoC</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">и </span><span style=""color: #2d373c;"">FPGA</span><span style=""color: #2d373c;"">.</span>
+</p>
+<p>
+ <span style=""color: #2d373c;"">Visualizer</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">полностью интегрирован как с симулятором </span><span style=""color: #2d373c;"">Questa</span><span style=""color: #2d373c;"">, так и с системой аппаратной эмуляции </span><span style=""color: #2d373c;"">Veloce</span><span style=""color: #2d373c;"">, поддерживает языки </span><span style=""color: #2d373c;"">Verilog</span><span style=""color: #2d373c;"">, </span><span style=""color: #2d373c;"">SystemVerilog</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">и </span><span style=""color: #2d373c;"">VHDL</span><span style=""color: #2d373c;"">, и обеспечивает все возможности, необходимые для анализа волновых диаграмм, исходного кода и их перекрестных связей. В дополнение к интуитивному и простому использованию </span><span style=""color: #2d373c;"">Visualizer</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">вооружает инженера мощными инструментами для повышения продуктивности отладки объектов на уровне </span><span style=""color: #2d373c;"">SystemVerilog</span><span style=""color: #2d373c;"">/</span><span style=""color: #2d373c;"">UVM</span><span style=""color: #2d373c;"">, транзакций, </span><span style=""color: #2d373c;"">RTL</span><span style=""color: #2d373c;"">, вентильного уровня, включая верификацию проектов с низкой потребляемой мощностью. </span>
+</p>
+<p>
+ <b><span style=""color: #2d373c;"">Масштабируемость</span></b>
+</p>
+<p>
+ <span style=""color: #2d373c;"">- Быстрое моделирование с полной наблюдаемостью сигналов</span>
+</p>
+<p>
+ <span style=""color: #2d373c;"">- Подготовка данных для моделирования, эмуляции и валидации в кремнии</span>
+</p>
+<p>
+ <b><span style=""color: #2d373c;"">Отладка </span></b><b><span style=""color: #2d373c;"">RTL</span></b><b><span style=""color: #2d373c;""> описания</span></b>
+</p>
+<p>
+ <span style=""color: #2d373c;"">- Интеллектуальный анализ источника ошибки с помощью технологии </span><span style=""color: #2d373c;"">TimeCone</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">и обратной трассировке событий</span>
+</p>
+<p>
+ <span style=""color: #2d373c;"">- Расширенная система поиска и выделения событий во всем тестируемом объекте и тестбенче</span>
+</p>
+<p>
+ <b><span style=""color: #2d373c;"">Поддержка методологии </span></b><b><span style=""color: #2d373c;"">UVM</span></b>
+</p>
+<p>
+ <span style=""color: #2d373c;"">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=""color: #2d373c;"">Поддержка отладки классов </span><span style=""color: #2d373c;"">SystemVerilog</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">как в интерактивном режиме, так и в режиме пост-отладки</span>
+</p>
+<p>
+ <span style=""color: #2d373c;"">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=""color: #2d373c;"">Поддержка всех классов </span><span style=""color: #2d373c;"">SystemVerilog</span><span style=""color: #2d373c;"">, отладка </span><span style=""color: #2d373c;"">UVM</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">тестбенчей, ассертов, синхронных транзакций</span>
+</p>
+<p>
+ <b><span style=""color: #2d373c;"">Отладка систем с малой потребляемой мощностью</span></b>
+</p>
+<p>
+ <span style=""color: #2d373c;"">- Интуитивная визуализация параметров </span><span style=""color: #2d373c;"">UPF</span><span style=""color: #2d373c;""> </span><span style=""color: #2d373c;"">в контексте проекта</span>
+</p>
+<p>
+ <span style=""color: #2d373c;"">- Вывод полной таблицы пересечения зон с различными номиналами питания</span>
+</p>";html;visualizer;500;;/upload/iblock/eb9/visualizer.svg;;;Функциональная верификация;;
+veloce;Veloce;10;Y;;;;Эмуляция;text;/upload/iblock/3eb/Veloce_Apps_product_card_640_x_360.jpeg;"<div>
+ <img alt=""veloce-hardware-software-dsc08321-promo-640x480.jpg"" src=""/upload/medialibrary/655/veloce-hardware-software-dsc08321-promo-640x480.jpg"" title=""veloce-hardware-software-dsc08321-promo-640x480.jpg"" width=""448"" height=""336"" align=""right"">
+	<p>
+ <strong>Veloce – это система аппаратной эмуляции</strong>, которая является одним из краеугольных камней всей платформы функциональной верификации сложных систем на кристалле (SoC) компании Mentor A Siemens Business. Система имеет масштабируемую архитектуру и может обслуживать тестируемые объекты емкостью до 15 млрд. вентилей, что делает ее безусловным лидером среди аналогичных систем от других поставщиков.
+	</p>
+	<p>
+		 Архитектура Veloce базируется на запатентованном специализированном ASIC (Crystal), который перепрограммируется для компиляции RTL кода тестируемого объекта с учетом межсоединений на одном блоке (плате) и между блоками для обмена данными между чипами ASIC.
+	</p>
+	<p>
+		 Специализированная операционная система управляет всей средой верификации, которая включает также специальные приложения и программно-аппаратные решения для подключения физических и виртуальных периферийных устройств. В результате пользователь получает гибкую настраиваемую систему, которая позволяет решать задачу функциональной верификации SoC практически неограниченного объема со скоростью на несколько порядков превышающей скорость традиционного моделирования, обеспечивая при этом полную наблюдаемость всех внутренних и внешних логических сигналов тестируемого объекта для эффективного процесса отладки.
+	</p>
+	<p>
+		 Операционная система Veloce обеспечивает гибкое управление ресурсами в процессе эмуляции, которое позволяет в процессе работы с одним тестируемым объектом, добавлять новые варианты тестирования, включая, например, тестирование встроенного программного обеспечения SoC одновременно с аппаратным тестированием. Дополнительно операционная система позволяет использовать Veloce в мнопользовательском режиме, поддерживая одновременный запуск нескольких сеансов эмуляции не связанных между собой тестируемых объектов.
+	</p>
+	 <iframe title=""Системы программно-аппаратной эмуляции Veloce"" src=""https://www.youtube.com/embed/dlokxDj3U-A?feature=oembed"" allow=""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"" allowfullscreen="""" width=""853"" height=""480"" frameborder=""0"" style=""min-height:480px"">
+	</iframe>
+	<h3> Основные характеристики и преимущества </h3>
+	<ul class=""list-check"">
+		<li>
+		Использование специализированного программируемого ASIC и масштабируемой аппаратной архитектуры обеспечивает эмуляцию проектов в диапазоне от 40 млн. до 15 млрд. вентилей </li>
+		<li>
+		Эмуляция отдельных блоков, модулей и всего тестируемого SoC со скоростью на несколько порядков превышающей скорость моделирования </li>
+		<li>
+		Возможность прогона за короткое время гигантского объема тестовых векторов, включая реальное встроенное программное обеспечение, позволяет обнаружить сложные “скрытые” ошибки, которые крайне трудно выявить традиционными методами верификации. Это дает возможность исключить повторные запуски реализации проекта в кремнии при обнаружении ошибок на поздних этапах тестирования, например, в условиях лабораторного макетирования
+		<p>
+		</p>
+ </li>
+		<li>
+		Исчерпывающая и гибкая среда отладки, близкая по своим параметрам к среде отладки при моделировании </li>
+		<li>
+		Поддержка механизма ассертов и анализа полноты покрытия, аналогичная программному моделированию </li>
+		<li>
+		Поддержка многопользовательского режима за счет стандартного механизма управления очередями пользователей в том числе обслуживание запросов в удаленном режиме </li>
+		<li>
+		Специально написанные для Veloce приложения позволяют решать весь спектр задач функциональной верификации для самых сложных современных проектов SoC. </li>
+	</ul>
+	<table class=""comparison-table table-custom table-veloce"">
+	<tbody>
+	<tr>
+		<th>
+ <br>
+		</th>
+		<th>
+			 Моделирование
+		</th>
+		<th>
+			 Прототипирование на ПЛИС
+		</th>
+		<th>
+			 Veloce
+		</th>
+	</tr>
+	<tr>
+		<th>
+			 Время прогона теста<sup>*</sup>
+		</th>
+		<td>
+			 дни
+		</td>
+		<td>
+			 часы
+		</td>
+		<td>
+			 часы
+		</td>
+	</tr>
+	<tr>
+		<th>
+			 Объём
+		</th>
+		<td>
+			 н/д
+		</td>
+		<td>
+			 до 100M вентилей
+		</td>
+		<td>
+			 до 25B вентилей
+		</td>
+	</tr>
+	<tr>
+		<th>
+			 Диаграммы сигналов
+		</th>
+		<td>
+			 да
+		</td>
+		<td>
+			 нет
+		</td>
+		<td>
+			 да
+		</td>
+	</tr>
+	<tr>
+		<th>
+			 Функциональное покрытие
+		</th>
+		<td>
+			 да
+		</td>
+		<td>
+			 нет
+		</td>
+		<td>
+			 да
+		</td>
+	</tr>
+	<tr>
+		<th>
+			 SystemVerilog assertions
+		</th>
+		<td>
+			 да
+		</td>
+		<td>
+			 нет
+		</td>
+		<td>
+			 да
+		</td>
+	</tr>
+	<tr>
+		<th>
+			 Многопользовательский и удалённый доступ
+		</th>
+		<td>
+			 да (серверные фермы)
+		</td>
+		<td>
+			 с ограничениями
+		</td>
+		<td>
+			 да
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	<div class=""small"">
+		<sup>*</sup>Примеры тестов:
+		<ul>
+			<li>Загрузка Линукса на суперскалярном ЦПУ с кешами и блоком управления памятью</li>
+			<li>Сетевой маршрутизатор с реалистичным трафиком</li>
+			<li>Типичное регрессионное тестирование</li>
+		</ul>
+	</div>
+</div>";html;veloce;500;;/upload/iblock/e0a/veloce.svg;Да;Нет;Функциональная верификация;;
+symphony;Symphony;11;Y;;;;Функциональная верификация;text;/upload/iblock/c87/ams-symphony-is496123972-640x480.jpg;"<div>
+<img alt=""Снимок экрана 2021-02-03 в 19.15.53.png"" src=""/upload/iblock/e5e/Снимок%20экрана%202021-02-03%20в%2019.15.53.png"" title=""Снимок экрана 2021-02-03 в 19.15.53.png"" width=""532"" height=""528"" align=""right"">
+<p>
+ <strong>Приложение Symphony</strong> является самой высокоскоростной и гибко-конфигурируемой в индустрии системой функционального моделирования смешанных аналого-цифровых проектов, предназначенной для точной верификации функций тестируемого объекта, его производительности и связности как в блочном, так и в иерархическом режиме, во всем спектре аналого-цифровых ИС любого применения. Модульная архитектура Symphony включает приложение AFS (Analog FastSPICE) для моделирования смешанных проектов с точностью стандартного Spice моделирования и с объемом более 20 млн. вентилей. Symphony обеспечивает скорость моделирования в среднем в 2 раза выше, чем аналогичные системы предшествующего поколения. Приложение было апробировано на большом спектре смешанных аналого-цифровых ИС и их отдельных блоков, включая АЦП, трансиверы, схемы управления питанием, мульти-ГГц схемы PLL/DLL, схемы SerDes, сенсоры.
+</p>
+<p>
+	 Уникальный алгоритм оптимизации автоматически настраивается на конкретную архитектуру и топологию проекта, что обеспечивает высокую производительность верификации аналого-цифровых проектов. Symphony полностью интегрирован с приложением Solido Variation Designer, ведущим инструментом для проектирования систем с учетом возможного отклонения параметров технологического процесса. В связке в Solido Symphony быструю и точную верификацию подобных систем на уровне отдельных блоков и комплексных проектов ИС. Процесс верификации включает выдачу результатов в виде таблиц статистической оценки, полученных на основе небольшого по времени и объему тестирования, с точностью близкой к полномасштабному тестированию на уровне Spice.
+</p>
+<h3>Самое быстрое и точное моделирование смешанных аналого-цифровых проектов</h3>
+<ul class=""list-check"">
+	<li>Полностью использует все преимущества AFS</li>
+	<li>Точность на уровне Spice, сертифицированная основными фабриками</li>
+	<li>Ядро моделирования работает в 5-10 раз быстрее традиционных симуляторов Spice</li>
+	<li>Ядро моделирование работает в 2-6 раз быстрее Spice симуляторов с параллельной обработкой</li>
+</ul>
+<h3>Полностью конфигурируемая архитектура</h3>
+<ul class=""list-check"">
+	<li>Архитектура приложения настраивается на конкретный проект для получения требуемого результата</li>
+	<li>Поддерживает все стандартные системы цифрового моделирования</li>
+	<li>Максимальная степень повторного использования инфраструктуры верификации</li>
+	<li>Интеграция со всеми стандартными схемотехническими редакторами</li>
+</ul>
+<h3>Лучшая в своем классе универсальность применения</h3>
+<ul class=""list-check"">
+	<li>Поддержка преимущественно смешанных аналого-цифровых проектов</li>
+	<li>Возможность повторного использования аргументов командной строки A/D</li>
+	<li>Всесторонняя поддержка граничных элементов A/D</li>
+	<li>Повышение продуктивности верификации за счет возможности сохранения состояния процесса моделирования и рестарта с контрольной точки</li>
+</ul>
+<h3>Дополнительные возможности верификации и отладки</h3>
+<ul class=""list-check"">
+	<li>Возможность обнаружения высокого уровня импеданса Hi-Z в режиме смешанного моделирования</li>
+	<li>Интеграция с приложением Solido Variation Designer</li>
+	<li>Анализ шума при моделировании переходного режима</li>
+	<li>Встроенный визуализатор с контекстными кросс-ссылками в процессе отладки</li>
+	<li>Интерактивный TCL режим в процессе отладки</li>
+</ul>
+<h3>
+   <i class=""icon-pdf""></i><a href=""/upload/datasheets/symphony-mixed-signal-rus.pdf"" target=""_blank"">Скачать описание продукта</a>
+</h3>
+</div>";html;symphony;500;;/upload/iblock/38c/symphony.svg;Да;;Функциональная верификация;;
+afs;AFS;12;Y;;;;SPICE моделирование;text;/upload/iblock/4ec/ams-analog-fastspice-is889231186-640x480.jpg;"<div>
+ <img alt=""Siemens SW Analog FastSPICE Program FS 81587 C1.jpg"" src=""/upload/medialibrary/7ca/Siemens%20SW%20Analog%20FastSPICE%20Program%20FS%2081587%20C1.jpg"" title=""Siemens SW Analog FastSPICE Program FS 81587 C1.jpg"" width=""439"" height=""428"" align=""right"">
+	<p>
+ <strong>AFS (Analog Fast Spice)</strong> – это самое быстрое в мире приложение для Spice моделирования субнанометровых аналоговых, радиочастотных, смешанных и заказных цифровых ИС. Более 175 компаний используют AFS в качестве стандартного инструмента для решения задач верификации, в том числе таких как высоко-скоростные интерфейсы ввода-вывода, фазосинхронизаторы, ЦАП/АЦП, КМОП видео-сенсоры, схемы с радиочастотными метками (RFIC) и других применений.
+	</p>
+	<p>
+		 AFS сертифицирован основными фабриками для технологии 5нм FinFET и обладает скоростью моделирования в 5-10 раз выше, чем традиционные Spice симуляторы, и в 2 раза выше, чем Spice симуляторы, использующие параллельную обработку.
+	</p>
+	<p>
+		 Для ИС большого объема AFS поддерживает проекты емкостью более 50 млн. вентилей и имеет самую высокую в мире скорость моделирования в смешанном режиме.
+	</p>
+	<p>
+		 Для блоков встроенной памяти и других регулярных схем, опция AFS Mega поддерживает проекты емкостью более 100 млн. вентилей и точность моделирования, близкую к реальной работе в кремнии.
+	</p>
+	<h3>
+	AFS Circuit Simulator </h3>
+	<p>
+		 AFS Circuit Simulator – это ядро быстрого Spice моделирования ИС в субнанометровом диапазоне, обеспечивающее сертифицированную фабриками точность моделирования в 5-10 раз быстрее традиционных Spice симуляторов, в 2 раза быстрее Spice симуляторов с распараллеливанием, при поддержке проектов емкостью до 20 млн. вентилей.
+	</p>
+	<ul class=""list-check"">
+		<li>Точность сертифицированная для всех библиотек, поставляемых основными фабриками</li>
+		<li>
+		Поддержка проектов емкостью более 50 млн. вентилей </li>
+		<li>
+		Динамический диапазон переходных процессов более 150 dB </li>
+		<li>
+		В 5-10 раз быстрее, чем традиционный Spice </li>
+		<li>
+		В два раза быстрее, чем Spice в параллельном режиме </li>
+		<li>
+		Анализ по постоянному и переменному току, анализ переходных процессов, анализ шума </li>
+		<li>
+		Анализ надежности: метод Монте-Карло, Sweep-анализ, метод старения, метод контроля выхода за разрешенный диапазон </li>
+	</ul>
+	<h3>
+	AFS Transient Noise </h3>
+	<p>
+		 Обеспечивает Spice моделирование шумов в переходных режимах для всех типов схем. AFS Transient Noise подает на вход каждого устройства тестируемого объекта произвольный белый и мерцающий шум и анализирует волновые диаграммы выходных сигналов на каждом шаге моделирования переходного процесса на предмет возникновения недопустимых эффектов. Опция AFS Transient Noise входит в состав AFS Circuit Simulator.
+	</p>
+	<h3>
+	AFS RF </h3>
+	<p>
+		 Радиочастотные RF блоки являются неотъемлемой частью современных SoC, поскольку практически все они включают приемники и передатчики, работающие во всем спектре радиочастотных сигналов. AFS RF выполняет временной (метод Ньютона) и частотный (метод гармонического баланса) анализ, а также не имеющий аналогов полно-спектральный анализ периодических и мерцающих шумов, обеспечивая результат с точностью Spice моделирования. AFS RF входит в состав AFS Circuit Simulator.
+	</p>
+	<h3>
+	AFS Mega </h3>
+	<p>
+		 AFS Mega предназначен для моделирования встроенных блоков памяти и позволяет получить более точные временные и мощностные характеристики (в пределах минимального допуска от реальных результатов в кремнии) памяти за время, сравнимое со стандартным Fast Spice моделированием. AFS Mega дополняет приложение AFS, расширяя его возможности по емкости тестируемого объекта, скорости моделирования и дополнительных средствах анализа, что позволяет моделировать проекты с нормами до 5 нм (технология FinFET).
+	</p>
+	<ul class=""list-check"">
+		<li> Точность моделирования Spice для субнанометровых SoC</li>
+		<li>
+		Емкость тестируемого объекта более 100 млн. вентилей </li>
+		<li>
+		Совместимость со всеми приложениями Fast Spice от других поставщиков </li>
+		<li>
+		Анализ по постоянному току и анализ переходных процессов </li>
+		<li>
+		Поддерживает Монте-Карло и Sweep-анализ </li>
+	</ul>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/Siemens%20SW%20Analog%20FastSPICE%20Program%20FS%2081587%20C1.pdf"">Скачать описание продукта</a></h3>
+</div>
+ <br>";html;afs;500;;/upload/iblock/2de/analog-fastspice.svg;Да;;Функциональная верификация;;
+eldo;Eldo;13;Y;;;;;text;/upload/iblock/d84/eldo.png;"<p>
+	 Приложение Eldo является многократно апробированной в индустрии платформой, ориентированной на верификацию преимущественно аналоговых схем, обеспечивающей высокое качество результатов моделирования функционирования, надежности и диагностики отказов аналоговых, высокочастотных (RF) и смешанных аналого-цифровых схем при проектировании ИС для таких областей как автомобильная промышленность, управление производственными процессами, авиакосмическая промышленность, медицина, управление блоками питания и многие другие области, в том числе критичные по критерию безопасности системы. Более 200 компаний используют Eldo как стандартный инструмент для моделирования безопасности, надежности и качественного функционирования ИС, предназначенных для различных областей применения. Приложение поставляется в трех исполнениях: Eldo Classic, Eldo Premier и Eldo RF.
+</p>
+<p>
+	 Приложение Eldo при высокой скорости моделирования обеспечивает адекватную точность Spice моделирования аналоговых ИС, в частности реализованных на технологии BSD (Bipolar-CMOS-DMOS), и позволяет решить все задачи, возникающие в процессе проектирования и верификации таких ИС.
+</p>
+<p>
+	 Eldo предлагает полный набор инструментов для моделирования надежности, в том числе апробированную технологию моделирования деградации параметров схемы из-за старения, совместное электро-тепловое моделирование для оценки влияния рассеиваемой мощности на работу схемы, а также метод моделирования возможных вариантов отклонения параметров за границы безопасной зоны в течение всего жизненного цикла ИС.
+</p>
+<p>
+	 Поскольку Eldo сертифицирован в качестве стандартного инструмента практически всеми ведущими фабриками, библиотеки соответствующих моделей ячеек в формате Eldo поставляются в качестве “золотого” стандарта точности при Spice моделировании. В особенности это характерно для преимущественно цифровых ИС (например, процессоров), где библиотеки цифровых ячеек требуют точной характеризации. Встроенный в Eldo аппарат расширенного статистического анализа позволяет обеспечить практически полное совпадение параметров характеризации с параметрами ячеек в кремнии, а также повысить выход годных для глубоко-субмикронных технологических процессов.
+</p>
+<p>
+	 Совместно с приложением Questa и ядром смешанного моделирования, Eldo входит как составная часть в приложение Questa ADMS, которое поддерживает все версии Spice, VHDL, Verilog, VHDL-AMS, Verilog-AMS и другие языки и обеспечивает все необходимое для функциональной верификации аналоговых, цифровых и смешанных систем, включая методологию управления полнотой покрытия кода и функционального покрытия, являющуюся основой верификации цифровых систем.
+</p>";html;eldo;500;;/upload/iblock/ceb/eldo.svg;;;Функциональная верификация;;
+formalpro;FormalPro;14;Y;;;;;text;/upload/iblock/a38/formalpro.gif;"<p>
+	 Приложение FormalPro предназначено для контроля функциональной эквивалентности между разными уровнями реализации проекта ASIC или FPGA. Анализ эквивалентности выполняется методом формальной верификации тестируемого объекта с его референсным описанием и осуществляется на несколько порядков быстрее, чем поведенческое моделирование (часы и даже минуты вместо недель и дней). Основное назначение – сравнение эквивалентности вентильного уровня проекта на разных уровнях его реализации (от синтеза до tapeout) c исходным RTL описанием.
+</p>
+<p>
+ <b>Основные преимущества</b>
+</p>
+<p>
+	 - Значительно сокращает время верификации
+</p>
+<p>
+	 - Сравнивает функциональную эквивалентность двух уровней реализации проекта:
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - исходного RTL описания и вентильного описания после синтеза или внесения изменений
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - двух вентильных описаний после очередной итерации получения топологии проекта
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - двух RTL описаний при конверсии проекта из одного языка в другой
+</p>
+<p>
+	 - Поддерживает проекты большой емкости:
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Несколько миллионов вентилей
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Весь кристалл целиком
+</p>
+<p>
+	 - Обеспечивает быстрый процесс отладки:
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Быстрое обнаружение и локализация расхождений
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Быстрое повторное тестирование после устранения расхождений в одной сессии верификации
+</p>
+<p>
+	 - Поддерживает FPGA
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Xilinx, Altera, Actel
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Автоматическая генерация файлов FVI и VIF
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Ускорение процесса верификации
+</p>
+<p>
+	 - Предоставляет удобный пользовательский интерфейс для ввода и настройки исходных описаний
+</p>
+<p>
+	 - Обеспечивает возможность управления регрессионной верификацией в командном режиме
+</p>
+<p>
+	 - Поддерживает языковые ограничения и TCL скрипты
+</p>
+<p>
+	 - Обеспечивает инкрементную верификацию
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Рекомпиляция только той части проекта, которая подверглась изменениям
+</p>
+<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Рестарт анализа с промежуточных точек
+</p>";html;formalpro;500;;/upload/iblock/0fb/formalpro.svg;;;Функциональная верификация;;
+oasys_rtl;OASYS RTL;15;Y;;;;;text;/upload/iblock/358/oasis.jpg;"<h2>Общие сведения</h2>
+<p>
+	 Пакет логического и физического синтеза цифровых ИС Oasys-RTL поддерживает проекты практически неограниченной емкости, обеспечивая при этом высокое качество результата путем оптимизации проекта на верхнем уровне абстракции и используя встроенный механизм планирования и размещения. При этом качественный результат достигается в короткий срок путем быстрых итераций планирования и размещения с последующим синтезом, которые учитывают физические параметры синтезируемого объекта.
+</p>
+<p>
+	 Большинство известных пакетов синтеза RTL кода используют процедуры оптимизации на уровне вентильного нетлиста. Oasys-RTL использует оптимизацию на верхнем уровне абстракции, что дает гораздо большие возможности для улучшения результата синтеза. Запатентованная технология PlaceFirst обеспечивает предварительное размещение (до синтеза), что позволяет учитывать при синтезе временные и пространственные ограничения. Кроме того, оптимизация на RTL уровне выполняется гораздо быстрее, что дает возможность синтезировать проекты емкостью 100 миллионов вентилей и более в сроки на порядок меньше, чем синтезаторы, поставляемые основными конкурентами.
+</p>
+<h2>Размер проектов и время синтеза</h2>
+<p>
+	 Oasys-RTL реализует новый подход к синтезу цифровых проектов – в процессе одного запуска процедуры синтеза анализу и оптимизации подлежат все данные о проекте, начиная с уровня RTL и заканчивая уровнем размещенных вентилей и макросов. Вся процедура синтеза проекта емкостью в десятки миллионов вентилей от исходного нетлиста до размещенных вентилей занимает несколько часов.
+</p>
+<p>
+	 Большая емкость проектов компенсируется высокой скоростью синтеза. Ключом к высоким показателям по емкости и скорости синтеза является технология оптимизации проекта на уровне RTL, которая также повышает качество результатов и сокращает количество итераций синтеза. Сама оптимизация проектов емкостью более 100 миллионов вентилей выполняется за один прогон. При равной емкости проектов конечное время синтеза Oasys-RTL на порядок меньше по сравнению с традиционными пакетами синтеза от других поставщиков.
+</p>
+<h2>Планирование кристалла на RTL уровне </h2>
+<p>
+	Новая технология, используемая Oasys-RTL заключается в предварительном планировании размещения кристалла уже на уровне RTL, при котором учитываются такие параметры как структура шин данных, ограничения по задержкам, потребляемой мощности и площади кристалла, ограничения по каналам трассировки и др. Встроенный редактор планирования автоматически размещает макросы, пины и контактные площадки, анализируя при этом ограничения по отдельным зонам кристалла, области запрета и блокировки трасс и другие физические ограничения. Одновременно анализируются ограничения по пропускной способности каналов трассировки, превышение допустимых задержек, статическое и динамическое потребление мощности, требования DFT и ограничения по занимаемой площади с тем, чтобы в случае нарушения какого-либо параметра уже на раннем этапе синтеза можно было внести требуемое изменение. Предварительное планирование, полученное с помощью Oasys-RTL, можно непосредственно использовать на этапе физического синтеза, существенно сокращая время получения финального размещения для реализации кристалла в кремнии.
+</p>
+<h2>Снижение потребляемой мощности</h2>
+<p>
+	 Oasys-RTL включает полный спектр функциональных возможностей, ориентированных на снижение потребляемой мощности, включая поддержку логических библиотек с множественными порогами срабатывания, стробирование синхросигналов, поддержку проектов с множественными уровнями питания на основе UPF и многое другое. В процессе синтеза устанавливаются все необходимые схемы сдвига уровней переключения, изолирующие ячейки, регистры удержания в зависимости от требований, заданных в UPF описании проекта. В процессе синтеза Oasys-RTL анализирует статическую и динамическую потребляемую мощность и, при необходимости, вносит соответствующие изменения для ее оптимизации. Для минимизации динамической потребляемой мощности на основе анализа VCD файла и данных о переменной частоте синхронизации генерируется специальная логика для стробирования синхросигналов. Зоны превышения потребляемой мощности подсвечиваются на плане размещения, после чего может быть сгенерирован отчет с кросс-ссылками между топологией и RTL кодом, который позволяет быстро устранить нарушения.
+</p>
+<h2>Высокое качество синтеза</h2>
+<p>
+	 Oasys-RTL использует уникальную технологию предварительного размещения для оптимизации RTL. В отличие от традиционных средств синтеза, которые сначала выполняют синтез, а затем оптимизирую результат на вентильном уровне, Oasys-RTL одновременно оптимизирует разбиение RTL кода на основе предварительного размещения, что позволяет сразу получить более оптимальный результат. Высокое качество результата достигается учетом физических параметров на этапе предварительного размещения и возможностью выполнения быстрых итерационных процедур внесения изменений и их проверки.
+</p>
+<p>
+	 Вначале Oasys-RTL синтезирует RTL код в виртуальные физические блоки. Каждый из таких блоков оптимизируется отдельно на уровне размещенных вентилей. При необходимости первоначальное разбиение может быть изменено до тех пор, пока не будут выполнены все требования спецификации верхнего уровня RTL. Выходными данными Oasys-RTL является вентильный нетлист и файл DEF, которые являются исходными данными для этапа размещения и трассировки.
+</p>
+<p>
+	 Технология оптимизации на верхнем уровне абстракции и встроенный механизм планирования и размещения обеспечивают достижение не имеющих аналога результатов по критериям поддерживаемой емкости проекта, времени синтеза, качества результатов и учета физических параметров на всех этапах синтеза.
+</p>";html;oasys_rtl;500;;/upload/iblock/bb2/oasis.svg;;;Физическое проектирование ИС;;
+aprisa;Aprisa;16;Y;;;;Place & Route;text;/upload/iblock/a55/L4-aprisa-feature-640x480.png;"<div>
+<img alt=""L4-aprisa-offer-image-640x480.jpg"" src=""/upload/medialibrary/498/L4-aprisa-offer-image-640x480.jpg"" title=""L4-aprisa-offer-image-640x480.jpg"" width=""384"" height=""288"" align=""right"">
+<p>
+	 <b>Aprisa это платформа автоматического размещения и трассировки цифровых ИС</b>, которая охватывает как верхний иерархический уровень проекта, так и физическую реализацию отдельных блоков сложных цифровых ИС. Ядром технологии Aprisa является оптимизированная архитектура детальной трассировки и единая иерархическая база данных, специально разработанные для проектов с технологическими нормами 28 нм и ниже. Используя самые последние достижения в области технологии физического проектирования ИС, Aprisa обеспечивает быструю и качественную - по критериям производительность, потребляемая мощность, площадь кристалла, надежность - реализацию проектов сложных цифровых ИС.
+</p>
+<h3>Детализированная архитектура с фокусом на трассировку</h3>
+<p>
+	 По мере продвижения проектов в область 16 нм и ниже сопротивление проводников и переходных отверстий становится фактором, который оказывает решающее влияние на производительность ИС. Задержки сигнала в межсоединениях и другие факторы необходимо тщательно учитывать именно на этапе трассировки. В связи с этим необходимо иметь механизм учета данных параметров в течение всего процесса трассировки.
+</p>
+<p>
+	 Архитектура Aprisa включает единую оперативную модель данных, которая используется на всем протяжении процесса размещения и трассировки, обеспечивая оперативный обмен данными между такими этапами, как оптимизация размещения, оптимизация дерева синхросигнала, детальная конечная трассировка и др. Точное соответствие модели данных конкретному этапу и моменту времени процесса трассировки позволяет повысить качество результатов, уменьшить число итераций и ускорить процесс трассировки в 2 и более раза по сравнению с аналогичными системами других поставщиков.
+</p>
+<h3>Сертификация ведущих фабрик</h3>
+<p>
+	 Платформа Aprisa полностью сертифицирована ведущими фабриками, включая TSMC, для продвинутых технологических норм вплоть до 7 нм. В процессе сертификации в Aprisa были апробированы и сертифицированы новые технологии, не имеющие аналогов в мире. Эти технологии, обеспечивают достижение высоких результатов по критериям производительности, потребляемой мощности и площади кристалла при одновременном сокращении цикла проектирования и быстром выходе на рынок.
+</p>
+</div>";html;aprisa;500;;/upload/iblock/1bf/Aprisa.svg;Да;;Физическое проектирование ИС;;
+tanner;Tanner;18;Y;;;;Проектирование ASIC;text;/upload/iblock/4bd/implementing-multi-domain-sys-feature-640x360.jpg;"<div>
+ <iframe title=""Tanner Designer: Analog Verification -- Mentor"" src=""https://www.youtube.com/embed/Un6oYKHm3W0?feature=oembed"" allow=""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"" allowfullscreen="""" width=""640"" height=""360"" frameborder=""0"" class=""video-right"">
+		</iframe>	
+<p>
+ <strong>
+		 Маршрут проектирования заказных аналого-цифровых ИС Tanner</strong> является одним из наиболее распространенных в мире как по количеству пользователей, так и по наличию библиотек у ведущих фабрик. Он полностью интегрирован с такими лидирующими решениями Mentor Graphics в своих областях, как AFS, OASYS RTL, Nitro-SoC, Calibre и другими. Маршрут Tanner прост в освоении и легко адаптируется к индивидуальным требованиям пользователя.
+	</p>
+	<p>
+		 Маршрут включает схемотехнический редактор с расширенным набором функций, топологический редактор, интеграцию с ведущей системой аналого-цифрового моделирования (AFS, Symphony), платформой Calibre – золотым стандартом в области контроля правил проектирования, физической верификации и экстракции паразитных параметров.
+	</p>
+	<p>
+		 Процесс проектирования начинается с создания принципиальной схемы, ее верификации, с последующим аналоговым или аналого-цифровым моделированием и разработкой топологии кристалла, ее физической верификацией и подготовкой производства. Библиотеки для наиболее популярных технологических процессов с субнанометровыми нормами сертифицированы ведущими фабриками для использования в маршруте Tanner.
+	</p>
+	<p>
+		 Tanner интегрирован практически со всеми аналоговыми и аналого-цифровыми симуляторами, включая симуляторы от других поставщиков, что позволяет инженерам выбрать наиболее подходящее для них решение.
+	</p>
+	<p>
+		 Tanner помимо традиционного проектирования аналого-цифровых ИС включает полные решения для проектирования ИС MEMS и фотоники, которые используются во многих современных приложениях, например, в IoT.
+	</p>
+	<h3>Основные характеристики и преимущества</h3>
+	<ul class=""list-check"">
+		<li>Комплексный маршрут проектирования от создания схемы до выдачи tapeout</li>
+		<li>Поддержка основных стандартов: OpenAccess, iPDK, TCL, Python</li>
+		<li> Сертифицированные основными фабрикам библиотеки (PDK) для наиболее восстребованных норм проектирования</li>
+		<li> Полная интеграция с платформой Calibre для физической верификации и подготовки производства</li>
+		<li> Большой выбор симуляторов: T-Spice, Eldo, AFS, Symphony, Questa, симуляторы от других поставщиков</li>
+	</ul>
+<img alt=""icds-sdl-540x480.jpg"" src=""/upload/medialibrary/77b/icds-sdl-540x480.jpg"" title=""icds-sdl-540x480.jpg"" width=""448"" height=""336"" align=""left"">
+	<h3>Проектирование аналоговых ИС</h3>
+	<p>
+		 Маршрут Tanner является надежным, многократно апробированным (десятки тысяч разработанных и изготовленных ИС за 30 лет существования), который обеспечивает комплексное решение при сравнительно небольших затратах на приобретение и техническую поддержку. Tanner включает все этапы разработки – создание схемы, моделирование на транзисторном уровне, разработку и физическую верификацию топологии, подготовку производства. Более 25 ведущих фабрик предлагают PDK сертифицированные для маршрута Tanner.
+	</p>
+	<h3>S-Edit</h3>
+	<p>
+		 Схемотехнический редактор S-Edit включает расширенный инструментарий для разработки аналоговых схем, включая самые сложные современные проекты. После создания и предварительной верификации схемы, пользователь может перейти к этапу моделирования, имея при этом богатый выбор симуляторов: T-Spice, Eldo, AFS и другие.
+	</p>
+	<p>
+		 Управление процессом моделирования осуществляется с помощью модуля Tanner Designer. Он обеспечивает удобную визуализацию результатов моделирования, с помощью которой инженеры могут быстро проанализировать, какие блоки прошли тестирование на соответствие исходной спецификации, а какие нет. Такой подход позволяет эффективно управлять процессом сходимости функциональной верификации. Результаты моделирования могут быть также выведены в виде отчетов в форматах eXcel или LibreOffice.
+	</p>
+ <strong>Основные характеристики и преимущества схемотехнического редактора</strong>
+	<ul class=""list-check"">
+		<li>Комплексный маршрут проектирования от создания схемы до выдачи tapeout</li>
+		<li>Поддержка основных стандартов: OpenAccess, iPDK</li>
+		<li>Поддержка импорта и экспорта схем во всех основных стандартах индутрии</li>
+		<li> Поддержка операционной среды Linux и Windows</li>
+		<li> Управление процессом моделирования, включая многозадачный режим</li>
+		<li> Удобный вывод результатов моделирования</li>
+		<li> Большой выбор систем моделирования: T-Spice, Eldo, AFS, Questa и другие</li>
+		<li> Поддержка множества приложений для управления версиями проекта</li>
+	</ul>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/Siemens%20SW%20Tanner%20S%20Edit%20Schematic%20Capture%20FS%2081570%20C1.pdf"">Скачать описание пакета S-Edit</a></h3>
+	<h3>L-Edit</h3>
+	<p>
+		 Топологический редактор L-Edit поддерживает иерархические проекты и предлагает расширенный набор инструментов для создания топологии проекта, включая такие продвинутые функции как перестановка компонентов, подсветка отдельных областей, создание макросов на основе скриптов и многое другое. L-Edit поддерживает автоматическую генерацию топологии из схемы (SDL), которая позволяет полностью исключить ошибки LVS, связанные с ручной разводкой ячеек. Кроме того, SDL обеспечивает быструю коррекцию схемы в случае внесения изменений (ECO). На завершающем этапе перед передачей проекта на изготовление, для финальной физической верификации используется Calibre.
+	</p>
+ <strong>Основные характеристики и преимущества</strong>
+	<ul class=""list-check"">
+		<li>Комплексное решение для разработки топологии ИС, включая иерархические проекты</li>
+		<li>Поддержка основных стандартов: OpenAccess, iPDK</li>
+		<li>Поддержка множества приложений для управления версиями проекта</li>
+		<li> Расширенный набор булевых операций с полигонами</li>
+		<li> Полная интеграция с Calibre для финальной физической верификации</li>
+		<li>Поддержка скриптов на C++, TCL и Python</li>
+	</ul>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/Siemens%20SW%20Tanner%20L%20Edit%20IC%20FS%2081552%20C1.pdf"">Скачать описание пакета L-Edit</a></h3>
+	<h3>Проектирование смешанных аналого-цифровых ИС</h3>
+	<p>
+		 Tanner включает все этапы разработки аналого-цифровых ИС – создание схемы, моделирование на транзисторном уровне и RTL уровне, разработку и физическую верификацию топологии, подготовку производства. Одной из главных задач в этом случае является максимальное упрощение разаработки цифровой части проекта.
+	</p>
+	<p>
+		 Схема аналоговой части проекта создается с помощью редактора S-Edit, который включает расширенный инструментарий для разработки аналоговых схем, включая самые сложные современные проекты. Цифровые блоки, описанные на Verilog или VHDL, “подключаются” к схеме в виде макросов. После завершения полного описания проекта, он может быть промоделирован на транзисторном уровне с помощью одного из симуляторов – T-Spice, Eldo, AFS. Эти симуляторы интегрированы с платформой цифрового моделирования Questa, что обеспечивает возможность совместного аналого-цифрового моделирования.
+	</p>
+	<p>
+		 Для проектов с большим содержанием цифровой части используется опция Digital Implementer, которая включает модуль синтеза цифровых блоков OASYS RTL и модуль размещения и трассировки Nitro P&amp;R.
+	</p>
+	<p>
+		 Digital Implementer полностью интегрирован с топологическим редактором L-Edit, что делает его идеальным инструментом для проектирования смешанных аналого-цифровых проектов, например в области IoT. Он имеет простой пользовательский интерфейс, легко осваивается и включает опцию автоматической настройки процесса проектирования, что является важным преимуществом для разработчиков аналоговых схем, не слишком хорошо знакомых с процессом проектирования цифровых схем.
+	</p>
+	<p>
+		 Далее планирование, размещение и трассировка цифровой части проекта может выполняться двумя способами. Первый заключается в том, что инженер задает параметры кристалла, зазоры, ширину трассировочных каналов, требования к разводке шин питания непосредственно в Digital Implementer. Во втором случае эти параметры задаются в топологическом редакторе L-Edit или через файл описания размещения в формате DEF. Непосредственная трассировка выполняется в Digital Implementer, используя вышеуказанные настройки.
+	</p>
+	<p>
+		 При этом технологические параметры библиотечных ячеек могут быть импортированы в стандартных форматах LEF, Liberty, PTF, а Verilog нетлист дополнен требованиям к временным параметрам путем подключения соответствующего файла ограничений.
+	</p>
+ <strong>Основные характеристики и преимущества</strong>
+	<ul class=""list-check"">
+		<li> Модуль размещения и трассировки поддерживает работу под управлением временных ограничений и включает усовершенствованные алгоритмы разводки дерева синхронизации</li>
+		<li> Поддержка методологии проектирования ИС с малой потребляемой мощностью</li>
+		<li> Планировщик учитывает геометрию разводки цепей питания</li>
+		<li>Поддержка ОС Linux и Windows</li>
+		<li>Возможность синтеза цепей сканирования для DFT приложений</li>
+		<li>Возможность адаптации к требованиям пользователя путем написания скриптов на TCL</li>
+		<li>Возможность импорта технологических и временных параметров в стандартных форматах</li>
+	</ul>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/Siemens%20SW%20Tanner%20Digital%20Implementer%20FS%2081551%20C1.pdf"">Скачать описание пакета Tanner Digital Implementer</a></h3>
+	<h3>Проектирование MEMS ИС</h3>
+	<p>
+		 Маршрут Tanner предлагает решение в области проектирования и моделирования 3D MEMS устройств, которое является золотым стандартом в индустрии. Процесс проектирования начинается с создания топологии MEMS устройства в редакторе L-Edit. Одним из преимуществ маршрута Tanner является то, что для разработки топологии устройств, их 3D моделирования и подготовки производства используется единая среда проектирования, которая обеспечивает также создание библиотек компонентов MEMS для их последующего повторного использования. При этом процесс проектирования MEMS полностью интегрирован в маршрут проектирования ИС, что позволяет быстро и эффективно разработать проект комплексного устройства в едином корпусе.
+	</p>
+	<p>
+		 Топологический редактор L-Edit включает весь функционал, необходимый для разработки устройств MEMS. Возможность создания криволинейных топологических элементов, развитый механизм булевых операций с топологическими элементами и использование параметризованных ячеек делают процесс создания устройств MEMS простым и эффективным.
+	</p>
+	<p>
+		 Маршрут Tanner позволяет проектировать устройства MEMS на основе их исчерпывающего моделирования, что исключает затратный этап физического прототипирования. При этом расширенный набор симуляторов дает возможность совместного моделирования MEMS и ИС в одном сеансе моделирования.
+	</p>
+	<p>
+		 Параметризированный подход включает также возможность моделирования при подготовке к производству, что, как многократно проверено ведущими фабриками, обеспечивает получение корректного изделия на первом цикле изготовления.
+	</p>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/Siemens%20SW%20Tanner%20MEMS%20Design%20Flow%20FS%2081554%20C1.pdf"">Скачать описание маршрута проектирования MEMS</a></h3>
+	<h3>Проектирование ИС на основе фотоники</h3>
+	<p>
+		 Маршрут Tanner обеспечивает интегрированное решение как для проектирования традиционных ИС, так и для ИС на основе фотоники. Это решение охватывает все стадии проектирования – разработку схемы, моделирование, проектирование и верификацию топологии.
+	</p>
+	<p>
+		 Управляемый с помощью скриптов компилятор фотоники LightSuite Photonic Compiler выполняет автоматическую гибридную трассировку электрических и оптических линий, сокращая время получения финальной топологии с нескольких недель до нескольких часов. Интегрированная с компилятором опция L-Edit Photonics выполняет трассировку блоков, не содержащих оптических линий, в традиционном формате.
+	</p>
+	<p>
+		 Моделирование схем фотоники, а также смешанных опто-электрических схем может выполняться с помощью симуляторов, поставляемых нашими партнерами. Соответствующие дизайн киты сертифицированы ведущими фабриками.
+	</p>
+	<h3>Автоматизация разработки топологии</h3>
+	<p>
+		 Компилятор LightSuite Photonic Compiler является единственным на сегодняшний день инструментом, который обеспечивает автоматическую трассировку ИС с встроенной фотоникой. Он включает несколько программ трассировки, которые в автоматическом режиме выполняют трассировку как оптических, так и электрических линий. Высокая скорость трассировки дает возможность трассировать около 500 оптических компонентов в час. Пользователь имеет возможность выбора программы трассировки, а также различных алгоритмов трассировки из встроенных в компилятор, например, трассировку с фиксированной длиной межсоединений. Подключение Calibre RealTime непосредственно в процессе размещения и трассировки обеспечивает корректный с точки зрения DRC результат.
+	</p>
+	<p>
+		 Компилятор LightSuite Photonic Compiler поддерживает несколько режимов работы:
+	</p>
+	<ul class=""list-check"">
+		<li>С помощью управляющих скриптов, специалисты полностью контролируют процесс размещения и трассировки ИС с встроенной фотоникой</li>
+		<li>Автоматическая генерация топологии на основе схемы для создания блоков, не содержащих фотоники</li>
+		<li>Проектирование в экспериментальном режиме позволяет создать тестовый проект с последующей возможной заменой параметров отдельных ячеек и их тестирования
+		<p>
+		</p>
+ </li>
+		<li>Проектирование оптических линий в промежуточной подложке, на которой могут располагаться как оптические, так и традиционные компоненты</li>
+	</ul>
+	<p>
+		 Основные характеристики и преимущества компилятора LightSuite Photonic Compiler
+	</p>
+	<ul class=""list-check"">
+		<li>Высокая скорость трассировки позволяет создавать альтернативные версии по принципу “что если”</li>
+		<li>Фабриками сертифицировано большое количество дизайн китов (PDK)</li>
+		<li> Поддержка стандартов, включая OpenAccess</li>
+		<li>Поддержка популярного языка Python для создания скриптов</li>
+		<li>Обеспечение DRC-корректности топологии с помощью Calibre RealTime</li>
+		<li>Поддержка ОС Linux</li>
+	</ul>
+	<h3>Проектирование заказных ИС фотоники</h3>
+	<p>
+		 Опция L-Edit Photonics дополняет мощный топологический редактор L-Edit специальными функциями для ручной разработки встроенных оптических компонентов. Эта опция позволяет быстро создавать оптические элементы и межсоединения, с помощью традиционной технологии drag-and-drop, которая используется в традиционных топологических редакторах. Инженеры могут выбирать оптические компоненты из PDK, поставляемых фабриками, размещать их на кристалле и соединять их оптическими волноводами. При этом допускается создание пересечений. Опция L-Edit Photonics автоматически прецизионно подключает волноводы к пинам элементов, обеспечивая надежное соединение. С помощью того редактора можно размещать и соединять электрические компоненты. После того как топология проекта полностью завершена, выполняется экстракция нетлиста для последующего моделирования.
+	</p>
+	<p>
+		 Опция L-Edit Photonics поддерживает несколько режимов работы
+	</p>
+	<ul class=""list-check"">
+		<li>Ручное создание топологии без использования схемы</li>
+		<li> Ручное создание топологии на основе схемы</li>
+		<li>
+		Автоматическая генерация топологии на основе схемы</li>
+	</ul>
+ <strong>Основные характеристики и преимущества L-Edit Photonics</strong>
+	<ul class=""list-check"">
+		<li> Поддержка ручного создания топологии при отсутствии схемы. Топология в этом случае является “золотым” компонентом базы данных проекта</li>
+		<li> Поддержка традиционного создания топологии на основе схемы с помощью редактора S-Edit</li>
+		<li> Генерация нетлиста для моделирования</li>
+		<li> Для моделирования используются продукты наших партнеров: Luceda, Lumerical, Optiwave, VPIphotonics</li>
+		<li> Многочисленные дизайн киты (PDK) сертифицированы ведущими фабриками</li>
+		<li> Поддержка ОС Linux и Windows</li>
+	</ul>
+	<h3>Верификация топологии</h3>
+	<p>
+		 Верификация выполняется с помощью Calibre, который использует для верификации оптических элементов правила на основе уравнений, что позволяет верифицировать криволинейные структуры волноводов.
+	</p>
+	<h3>Моделирование фотоники</h3>
+	<p>
+		 Моделирование выполняется с помощью приложений, поставляемых нашими партнерами: Luceda, Lumerical, Ansys, Optiwave, VPIphotonics. Эти приложения поддерживают и смешанное оптико-транзисторное моделирование.
+	</p>
+	<p>
+		 Фабрики – поставщики PDK для заказных ИС и ИС фотоники
+	</p>
+</div>";html;tanner;500;;/upload/iblock/8cf/method-draw-image (2).svg;Да;;Физическое проектирование ИС;;
+pyxis_eda_tools;Pyxis EDA Tools;19;N;;;;;text;;;text;pyxis_eda_tools;500;;/upload/iblock/ae7/not know.svg;;;Физическое проектирование ИС;;
+calibre_inroute;Calibre inRoute;17;Y;;;;;text;/upload/iblock/25f/calibri.png;"<div>
+<img alt=""calibre_in_route.png"" src=""/upload/medialibrary/dbd/calibre_in_route.png"" title=""calibre_in_route.png"" width=""375"" height=""587"" align=""right"">
+<h3> Общие сведения </h3>
+<p>
+	 Calibre-InRoute - это модуль физической верификации проекта, который обеспечиваете получение полностью верифицированной для производства топологии непосредственно в процессе физической реализации проекта за счет тесной интеграции со средствами размещения и трассировки. Нарушения DRC и DFM правил, обнаруженные Calibre-InRoute, автоматически исправляются в процессе трассировки. Такая интеграция повышает качество проекта, исключает ненужные итерации на поздних этапах и сокращает время подготовки производства.
+</p>
+<h3>Ускорение цикла физической верификации</h3>
+<p>
+	 По мере перехода к глубоко-субмикронным нормам проектирования, физическая верификация значительно усложняется, из-за экспоненциального роста числа DRC и DFM правил, которые подлежат проверке. Calibre InRoute использует стандартные файлы правил Calibre SVRF и DFM модели для физической верификации топологии непосредственно в процессе размещения и трассировки. Это позволяет сократить время верификации, минимизировать инженерные затраты и быстрее выйти на этап серийного производства. Поскольку файлы правил Calibre SVRF сертифицированы всеми фабриками, Calibre InRoute, как и вся платформа Calibre, является золотым стандартом в области физической верификации.
+</p>
+<h3>Прецизионная верификация в процессе трассировки</h3>
+<p>
+	 Поскольку Calibre InRoute использует для верификации самые последние сертифицированные фабриками файлы правил DRC и DFM модели, он не допускает расхождений между верифицированной топологией проекта и правилами, используемыми непосредственно в производственном процессе, которые в противном случае могут привести к неприятным сюрпризам после реализации проекта в кремнии.
+</p>
+<p>
+	 Дополнительно Calibre InRoute при необходимости генерирует абстрактные представления в формате GDSII, которые разработчики могут использовать для контроля нарушений DRC при сравнении топологического представления IP блока и традиционного представления топологии в формате GDSII.
+</p>
+<p>
+	 Поскольку Calibre InRoute напрямую использует сертифицированные фабриками файлы правил DRC и модели DFM, пользователь может быть уверен, что результат будет соответствовать всем требованиям производства.
+</p>
+<h3>Инновационная архитектура обеспечивает гибкость и точность верификации</h3>
+<p>
+	 Инновационная открытая архитектура Calibre InRoute позволяет программе размещения и трассировки запускать DRC и DFM анализ непосредственно изнутри своей оболочки. Ядро верификации и ядро поиска и коррекции ошибки “развязаны” и взаимодействуют в режиме plug-and-play. Любое нарушение, обнаруженное Calibre inRoute, автоматически корректируются трассировщиком и вновь проверяется Calibre IbRoute в инкрементном режиме. Такая архитектура исключает необходимость обмена данными поскольку ядро верификации и ядро редактирования полностью интегрированы и работают с одной и той же базой данных.
+</p>
+<p>
+	 В процессе верификации Calibre InRoute может при необходимости вызывать широкий спектр инструментов верификации, например, <a href=""/product/calibre_drc"">Calibre nmDRC</a>, <a href=""/product/calibre_lfd"">Calibre LFD</a>, Calibre CMPAnalyzer, <a href=""/product/calibre_yield_enhancer"">Calibre YieldEnhancer</a> и другие.
+</p>
+</div>";html;calibre_inroute;500;;/upload/iblock/2d0/calibri.svg;Нет;;Физическая верификация ИС;;
+20;Calibre DRC;20;Y;;;;;text;/upload/iblock/1d5/calibre-nmdrc-top-640x480.jpg;"<div>
+	<img alt=""CalRTDscreenshot-DE15DB46.png"" src=""/upload/medialibrary/078/CalRTDscreenshot-DE15DB46.png"" title=""CalRTDscreenshot-DE15DB46.png"" width=""512"" height=""328"" align=""right"">
+<p>
+		 Время итерации проекта постоянно растёт из-за постоянного усложнения и увеличения проектов. Calibre® nmDRC позволяет его уменьшить благодаря революционным возможностям, существенно отличающим Calibre nmDRC от других средств DRC.
+	</p>
+	<h3>Calibre in the Cloud </h3>
+	<p>
+		 Облачные вычисления позволяют снизить операционные издержки, выстроить более эффективную инфраструктуру и мастштабироваться при необходимости. В полупроводниковой отрасли облачные вычисления дают возможность ускорить выход продукта на рынок и быстрее внедрять инновации. Технологии Calibre были готовы для перенесения в облако годы назад — процесс работы с Calibre в облаке ничем не отличается от обычного. Упрощая использование ресурсов, облачные вычисления позволяют компаниям использовать встроенную способнотсь платформы Calibre к масштабированию, предоставляя доступ к вычислительным ресурсам, необходимым для достижения требуемой скорости выполнения (например, ночная верификация), даже в условиях экспоненциального роста количества вычислений при современных технологических процессах.
+	</p>
+	<h3>Calibre nmDRC-Recon </h3>
+	<p>
+		 Функционал <a href=""https://www.mentor.com/products/ic_nanometer_design/verification-signoff/calibre-early-verification"" target=""_blank"">Calibre nmDRC-Recon</a> позволяет командам, занимающимся физической верификацией, быстро сканировать “сырые” проекты для поиска и исправления выбранных классов ошибок на более ранних этапах. Проекты, содержащие грубые системные ошибки не только генерируют миллионы ошибок, но и отрицательно влияют на скорость и масштабируемость DRC. Инженеры могут использовать функционал Calibre nmDRC-Recon, чтобы быстро найти и исправить такие ошибки перед запуском полномасштабной проверки правил. Результаты Calibre nmDRC-Recon представляются в виде гистограмм, “тепловых карт” системы на кристалле, с возможностью фильтрации и сортировки, а также другим функционалом, позволяющим быстро найти и исправить систематические дефекты. Кроме того, инструмент Calibre nmDRC-Recon предоставляет весь этот функционал используя любой одобренный производителем набор правил “as is” для любого технологического процесса. Проверка Calibre nmDRC-Recon не только ускоряет общий процесс верификации, но и обеспечивает большую гибкость верификации.
+	</p>
+	<h3>Pattern Matching </h3>
+	<p>
+ <a href=""https://www.mentor.com/products/ic_nanometer_design/verification-signoff/physical-verification/calibre-pattern-match/"" target=""_blank"">Calibre® Pattern Matching</a> заменяет текстовые проверки правил на визуальные, что гаранирует точную и аккуратную реализацию спецификации проекта. Автоматическое распознавание шаблона и поиск, интегрированные в существующие среды разработки, упрощают процесс, сокращая количество правил и время верификации, одновременно увеличивая качество продукта и производительность.
+	</p>
+	<h3>
+	Equation-Based DRC </h3>
+	<p>
+		 Технология Equation-Based DRC (eqDRC) заполняет пустоту между традиционными симулятрорами DFM процессов и DRC, ускоряя процесс верификации и обеспечивая большую гибкость и расширяемость. Некоторые проблемы, такие как неровности, возникающие при химико-механической полировке, или не-Манхеттенские геометрии, просто слишком сложны для обычных DRC методов. Calibre eqDRC обеспечивает точную и аккуратную характеризацию сложных многовекторных и не-Манхеттенских геометрий, а также 2D/3D взаимодействий, непосредственно влияющих на производительность и/или технологичность.
+	</p>
+	<h3>Automated IP Waiver Management </h3>
+	<p>
+ <a href=""https://www.mentor.com/products/ic_nanometer_design/verification-signoff/physical-verification/calibre-automated-waivers"" target=""_blank"">Calibre Auto-Waiver</a> автоматически распознаёт и отключает “лишние” нарушения во внешних IP-блоках, ускоряя отладку и гарантируя, что все подобные неисправности будут корректно идентифицированы во время верификации всего чипа. Поскольку Calibre Auto-Waiver полностью одобрен производителями как часть процесса Calibre nmDRC, вы можете быть уверены, что, вне зависимости от вашего технологического процесса, Calibre Auto-Waiver правильно обработает все IP блоки, экономя ваше время и ресурсы.
+	</p>
+	<h3>Интегрированный DFM анализ </h3>
+	<p>
+		 Интегрированный анализ и повышение технологичности (DFM) позволяют оптимизировать топологию, чтобы минимизировать случайные, систематические и параметрические дефекты при изготовлении. Одновременный запуск DRC, анализ выхода годных и модификация топологии снижает время, нужное для выпуска топологии не только соответствующей правилам, но и имеющей высокий процент выхода годных.
+	</p>
+	<h3>Прямой доступ к БД </h3>
+	<p>
+		 Прямой доступ к базе данных позволяет инженерам использовать Calibre nmDRC на протяжении всего процесса проектирования, вне зависимости от выбранной среды разработки. Прямое чтение из популярных баз данных для хранения проекта (LEF/DEF, MilkyWay, OpenAccess, GDSII and OASIS®) ускоряет цикл DRC, убирая необходимость экспорта/импорта данных. Прямая запись позволяет делать обратную аннотацию изменений обратно в проект. Наконец, поддержка формата OASIS® уменьшает размер файла, упрощая передачу и хранение данных
+	</p>
+	<h3>Мультиэкспозиция </h3>
+	<p>
+		 Правила мультиэкспозиции требуют дополнительной топологической, физической и электрической верификации и отладки, и могут меняться в зависимости от методологии проектирования и процесса мультиэкспозиции на производстве. Решение <a href=""https://www.mentor.com/products/ic_nanometer_design/verification-signoff/physical-verification/calibre-multi-patterning"" target=""_blank"">Calibre Multi-Patterning</a> поддерживает все основные методологии проектирования и верификации, а также фактические реализации процесса мультиэкспозиции, при этом обеспечивая уникальные интеграции и отладочные возможности.
+	</p>
+	<h2>
+	Функции и преимущества </h2>
+	<ul class=""list-check"">
+		<li>Малое время цикла: Гипермасштабируемость обеспечивает быстрое выполнение DRC и высокую параллельность вычислений</li>
+		<li>Продвинутые проверки: Правила, описываемые формулами, позволяют осуществлять сложные проверки, что даёт уменьшение площади и повышенную устойчивость к изменениям условий на производстве</li>
+		<li>Защита инвестиций: Легко встраивается в существующие маршруты DRC. Использование более 3.5 миллиона строк SVRF кода для процессов от 250nm до 45nm защищает ваши инвестиции в инфраструктуру маршрута, обучение и наборы правил</li>
+		<li>Параллельная отладка: Ускоряет идентификацию, анализ и исправление нарушений, позволяя работать параллельно</li>
+		<li>Сокращение времени разработки: Верификация, анализ и визуализация показывают вам ошибки, которые реально влияют на выход годных</li>
+	</ul>
+</div>";html;calibre_drc;500;;;Нет;;Физическая верификация ИС;;
+calibre_lvs;Calibre LVS;21;Y;;;;;text;/upload/iblock/a50/nmlvs_datasheet.jpg;"<p>
+	 Calibre® nmLVS, лидирующий на рынке инструмент LVS верификации, тесно интегрирован с <a href=""https://www.mentor.com/products/ic_nanometer_design/verification-signoff/physical-verification/calibre-nmdrc/"">Calibre nmDRC</a> и <a href=""https://www.mentor.com/products/ic_nanometer_design/verification-signoff/circuit-verification/calibre-xrc/"">Calibre xRC™</a> чтобы обеспечить точную экстракцию компонентов для физической верификации и экстракции паразитных параметров. Calibre nmLVS сравнивает компоненты и связи между ними в схеме и в топологии.
+</p>
+<h3>
+Точная верификация </h3>
+<p>
+	 Calibre nmLVS обеспечивает точную верификацию цепей, поскольку может измерить реальную геометрию компонентов в чипе для полного расчёта их физических параметров. Из этих параметров получается информация для обратной аннотации в исходную схему, а также данные для моделирования. Помимо Calibre xRC, Calibre nmLVS также поддерживает и инструменты экстракции паразитных параметров третьих фирм.
+</p>
+<h3>
+Автоматизация пользовательских правил </h3>
+<p>
+	 Calibre nmLVS теперь может быть дополнен <a href=""https://www.mentor.com/products/ic_nanometer_design/verification-signoff/circuit-verification/calibre-perc/"">Calibre PERC</a> (Programmable Electrical Rule Checker). Calibre PERC позволяет автоматизировать использование продвинутых пользовательских правил и избежать подверженной ошибкам ручной проверки. PERC находит группы компонентов, соединённых указанным образом, и получает геометрические размеры элементов топологии цепи.
+</p>
+<h2>
+Возможности и преимущества </h2>
+<h3>
+Лидерство на рынке </h3>
+<p>
+	 Calibre nmLVS продолжает лидировать на рынке. Любим инженерами и руководством за доказанную производительность, ёмкость, надёжность и простоту отладки.
+</p>
+<h3>
+Лучшая в классе точность </h3>
+<p>
+	 Точность распознавания компонентов жизненно важна для успешной передачи в производство. Calibre nmLVS обеспечивает точность распознавания, которой доверяют.
+</p>
+<h3>
+Быстрая работа </h3>
+<p>
+	 Проприетарные технологии обеспечивают практически неограниченный размер проектов и быстрое время выполнения всех задач. Поддержка многопоточности и распределённых вычислений обеспечивают возможности для масштабирования в будущем.
+</p>
+<h3>
+Гибкость </h3>
+<p>
+	 Calibre nmLVS идеально подходит для обработки проекта любых размеров, будь то аналоговый/ВЧ проект или ИС на несколько миллионов вентилей.
+</p>
+<h3>
+Надёжность </h3>
+<p>
+	 Тысячи пользователей доверяют Calibre nmLVS как стандарту надёжности и предсказуемости всех операций.
+</p>
+<h3>
+Отладка проекта и простота использования </h3>
+<p>
+	 В Calibre nmLVS есть интуитивно понятная и простая в использовании среда для отладки верификации, чтобы вам было проще находить и исправлять недочёты в проекте. Calibre® nmLVS в два-три раза быстрее традиционных LVS маршрутов.
+</p>
+<p>
+</p>
+ <br>";html;calibre_lvs;500;;;;;Физическая верификация ИС;;
+calibre_realtime_digital;Calibre RealTime Digital;22;N;;;;;text;;;text;calibre_realtime_digital;500;;;;;Физическая верификация ИС;;
+calibre_realtime_custom;Calibre RealTime Custom;23;N;;;;;text;;;text;calibre_realtime_custom;500;;;;;Физическая верификация ИС;;
+calibre_multi_pattern;Calibre Multi-Pattern;24;Y;;;;;text;/upload/iblock/d46/calibre-multi-patterning-top-is1025575518-640x480.jpg;"<p>
+	 Calibre Multi-Patterning предназначен для верификации топологии проектов, использующих мультишаблонные технологии. Применение мультишаблонов позволяет повысить разрешающую способность воспроизведения топологии для глубоко субнанометровых технологических норм. Он обеспечивает декомпозицию топологии проекта с последующей верификацией и отладкой отдельных областей и всего проекта в целом. Calibre Multi-Patterning поддерживает все существующие мультишаблонные технологические процессы для всех основных фабрик. Приложение полностью интегрировано с другими приложениями Calibre маршрутами проектирования других поставщиков. <img alt=""calibre_mp.png"" src=""/upload/medialibrary/b16/calibre_mp.png"" title=""calibre_mp.png"" width=""974"" height=""564"">
+</p>";html;calibre_multi_pattern;500;;;;;Физическая верификация ИС;;
+calibre_pattern_match;Calibre Pattern Match;25;Y;;;;;text;/upload/iblock/c0d/calibre-pattern-matching-top-as168705405-640x480.jpg;"<p>
+	 <strong>Calibre Pattern Matching</strong> дополняет традиционную верификацию на основе текстовых правил DRC новой технологией верификации на основе сравнения геометрии полигонов с библиотеками ранее сохраненных шаблонов и выбора корректного варианта реализации топологии. Данная технология позволяет работать с очень сложными геометриями, в том числе с многослойными геометриями, и обеспечивает сокращение времени верификации и повышение ее точности за счет быстрого выбора и сравнения с библиотечными шаблонами. Приложение интегрировано со всеми остальными приложениями Calibre, в том числе с Calibre RealTime, предоставляя таким образом технологию Pattern Matching для использования в маршрутах проектирования других поставщиков.
+</p>
+<img alt=""calibre_pm.png"" src=""/upload/medialibrary/270/calibre_pm.png"" title=""calibre_pm.png"" width=""974"" height=""432"">
+";html;calibre_pattern_match;500;;;;;Физическая верификация ИС;;
+calibre_lfd;Calibre LFD;26;Y;;;;;text;/upload/iblock/420/calibre-LFD-top-as51490712-640x480.jpg;"<p>
+	<b>Calibre LFD</b> моделирует влияние отклонения параметров процесса фотолитографии на выход годных при изготовлении кристалла. Приложение выполняет три основных задачи:
+</p>
+<ul>
+	<li>Собирает информацию о том, как будет воспроизводиться рисунок не только при идеальных условиях фотолитографии, но и при различных отклонениях (расфокусировка, отклонения в дозировке, смещение маски и др. отклонения);</li>
+	<li>На основе собранной информации моделирует возможные отказы, которые могут повлиять на выход годных;</li>
+	<li>Присваивает каждой области топологии специальный индекс (DVI), характеризующий возможное влияние отклонения параметров на выход годных.</li>
+</ul>
+<p>
+	На основе полученной информации разработчики выбирают варианты реализации топологии, наименее подверженные влиянию отклонений. В результате проект верифицируется как с точки зрения DRC-, так и LFD-чистоты. Приложение интегрировано как с платформой Calibre, так и с маршрутами других поставщиков.
+</p>
+<img alt=""calibre_lfd.png"" src=""/upload/medialibrary/53c/calibre_lfd.png"" title=""calibre_lfd.png"" width=""684"" height=""396"">
+";html;calibre_lfd;500;;;;;Физическая верификация ИС;;
+calibre_yield_enhancer;Calibre Yield Enhancer;27;Y;;;;;text;/upload/iblock/6ef/Siemens SW Calibre YieldEnhancer with SmartFill FS 82870 F.jpg;"<p>
+	<b>Calibre Yield Enhancer</b> автоматически выполняет ряд операций над топологией проекта для повышения технологичности и выхода годных. Основными операциями являются – заполнение пустых областей слоев (SmartFill), оптимизация межслойных переходов (Via optimization) и модификация границ полигонов. В процессе выполнения этих операций строго контролируется отсутствие нарушений правил DRC. Calibre Yield Enhancer полностью интегрирован с другими модулями Calibre, поддерживает язык SVRF, форматы GDSII и OASIS, и может работать напрямую с форматами LEF/DEF. Операция SmartFill поддерживает все технологии, включая FinFET, и позволяет быстро вносить изменения на поздних этапах проектирования и верификации. Сертифицирован основными фабриками в качестве референсного приложения для технологии SmartFill.
+</p>
+
+";html;calibre_yield_enhancer;500;;;;;Физическая верификация ИС;;
+calibre_yield_analyzer;Calibre Yield Analyzer;28;Y;;;;;text;/upload/medialibrary/e1f/calibre-yieldanalyzer-top-is871255704-640x480.jpg;"<p>
+	Начиная с технологических норм примерно в половину длины волны света верификация DRC оказывается недостаточной для получения кристалла с приемлемым выходом годных. Все большее значение приобретают так называемые DFM правила, которые учитывают возможные отклонения при воспроизведении топологии в процессе фотолитографии. Прогон физической верификации с учетом всего множества DFM правил, рекомендуемых фабрикой, приводит к огромному количеству нарушений на выходе, которые можно наблюдать с помощью Calibre RVE или Calibre DESIGNrev. Задачей Calibre Yield Analyzer является анализ всего множества нарушений и определение критических областей, в которых данные нарушения оказывают наибольшее математически взвешенное влияние на выход годных. В дальнейшем именно эти нарушения должны быть скорректированы для повышения выхода годных, в то время как оставшаяся часть не оказывает существенного влияния. Calibre Yield Analyzer поддерживает форматы GDSII, OASIS, MilkyWay, Open Access и может работать напрямую с маршрутами проектирования от других поставщиков.
+</p>
+<img alt=""yield_analyzer.png"" src=""/upload/medialibrary/13e/yield_analyzer.png"" title=""yield_analyzer.png"" width=""781"" height=""503"">
+";html;calibre_yield_analyzer;500;;;;;Физическая верификация ИС;;
+29;Calibre xACT;29;N;;;;;text;/upload/iblock/bc4/calibrexact-D4FDC3C5.png;;text;calibre_xact;500;;;;;Физическая верификация ИС;;
+calibre_adp;Calibre ADP;30;N;;;;;text;;;text;calibre_adp;500;;;;;Физическая верификация ИС;;
+50;Calibre xRC;50;Y;;;;;text;/upload/iblock/6a0/Снимок экрана 2020-11-29 в 15.03.03.png;"<p>
+	 Calibre® xRC™ это инструмент для экстракции паразитных параметров, позволяющий получить точные данные для полного и точного посттопологического анализа и моделирования. Calibre xRC может получать паразитные параметры соединений и в иерархических проектах.
+</p>
+<p>
+	 В результате получаем компактные иерархические данные о паразитных параметрах на транзисторном уровне, которые можно передать в топологию через обратную аннотацию и промоделировать в таких симуляторах, как, например, HSIM. Используя иерархическое хранилище, иерархию схем и изоморфизм во время моделирования, Calibre xRC и HSIM достигают непревзойдённой производительности на очень больших проектах, при этом обеспечивая точность моделирования на уровне SPICE.
+</p>
+<h2>
+Возможности и преимущества </h2>
+<ul type=""disc"">
+	<li>Обеспечивает непревзойдённую производительность для СБИС, памяти, аналоговых проектов и систем на кристалле, без потери точности</li>
+	<li>Единый файл праил для пакетов <a href=""/product/calibre_drc"">DRC</a>, <a href=""/product/calibre_lvs"">LVS</a>, и Calibre xRC</li>
+	<li>Читает данные LVS для объединения паразитных элементов с компонентами схемы</li>
+	<li>Счётное ядро с использованием моделей рассчитывает внутренние ёмкости и ёмкостные связи для всех цепей с одинаково высокой точностью</li>
+</ul>
+<ul type=""disc"">
+	<li>Интегрируется с <a href=""/product/calibre_drc"">Calibre DRC™</a> и LVS, Calibre Interactive™, Calibre View и Calibre RVE™, что даёт мощные отладочные возможности </li>
+	<li>Результаты экстракции и моделирования подтверждаются реальными измерениями</li>
+	<li>Обеспечивает разработчикам аналого-цифровых систем на кристалле единое решение для экстракции паразитных параметров, не зависящее от стиля и маршрута проектирования</li>
+</ul>";html;calibre_xrc;500;;;;;Физическая верификация ИС;;
+calibre;Calibre;74;Y;;;;Физическое проектирование ИС;text;/upload/iblock/2f7/DesignArchitectIC_Small.jpg;"<div>
+ <img alt=""calibre.png"" src=""/upload/medialibrary/e09/calibre.png"" title=""calibre.png"" width=""340"" height=""340"" align=""right"">
+	<p>
+ <b>Платформа Calibre</b> является основным связующим звеном между проектированием и производством ИС. Она занимает центральное место в экосистеме “Дизайн-центр – Фабрика – IP-вендор – Интерфейсы”.
+	</p>
+	<p>
+		 Успешная разработка и производство современных ИС объемом в несколько миллиардов вентилей по технологическим нормам, приближающимся к 3-5 нм, невозможна без точной и высокопроизводительной физической верификации топологии в соответствии с сертифицированными файлами правил, включая специализированные средства повышения выхода годных, контроля соответствия реализованной топологии с исходной схемой, исчерпывающей экстракции паразитных параметров для финального моделирования, специальных мер оптической коррекции топологии для изготовления фотошаблона, подготовки данных для фотошаблона и многих других операций, необходимых для успешного производства ИС. Все вышеперечисленные функции входят в инструментарий Calibre. Обладая самой высокой в индустрии производительностью и точностью верификации, низкими требованиями к памяти и дисковому пространству, предлагая инновационные решения в области субнанометровых технологий (PERC, Pattern Matching и др.), Calibre является золотым стандартом для большинства ведущих дизайн-центров и полупроводниковых фабрик.
+	</p>
+</div>
+<h2>Семейство продуктов Calibre</h2>
+<h3> Верификация и DFM (pre-tapeout)</h3>
+<div class=""table-users"">
+	<table class=""table-custom table-calibre"">
+	<tbody>
+	<tr>
+		<th>
+			 Физическая верификация
+		</th>
+		<th>
+			 LVS и экстракция
+		</th>
+		<th>
+			 DFM
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<ul>
+				<li>DRC (<a href=""/product/calibre_drc"">DRC</a>, RT, <a href=""/product/calibre_inroute"">inRoute</a>, <a href=""/product/calibre_nmdrc_recon"">Recon</a>)</li>
+				<li><a href=""/product/calibre_multi_pattern"">Multi-Patterning</a></li>
+				<li><a href=""/product/calibre_pattern_match"">Pattern Matching</a></li>
+				<li>Auto-Waivers</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li><a href=""/product/calibre_lvs"">LVS</a></li>
+				<li><a href=""/product/calibre_nmlvs_recon"">LVS-Recon</a></li>
+				<li><a href=""/product/calibre_perc"">PERC</a></li>
+				<li><a href=""/product/calibre_xrc"">xRC</a>&amp;<a href=""/product/calibre_xact"">xACT</a></li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li><a href=""/product/calibre_yield_enhancer"">Yield Enhancer</a></li>
+				<li><a href=""/product/calibre_yield_analyzer"">Yield Analyzer</a></li>
+				<li><a href=""/product/calibre_lfd"">LFD</a></li>
+			</ul>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+</div>	
+	<iframe title=""Overview of Calibre PERC"" src=""https://www.youtube.com/embed/4xDMrYHU3RU?feature=oembed"" allow=""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"" allowfullscreen="""" width=""853"" height=""480"" frameborder=""0"" style=""min-height:480px; margin: 5% auto;"">
+	</iframe> 
+<h3>Подготовка производства (post-tapeout)</h3>
+	<h4>Вычислительные методы коррекции фотолитографии</h4>
+	<dl>
+		<dt>Calibre nmOPC</dt>
+		<dd>Оптическая коррекция топологии для повышения разрешающей способности процесса фотолитографии.</dd>
+		<dt>Calibre nmSRAF</dt>
+		<dd>Включение в топологию дополнительных элементов (SRAF) для повышения разрешающей способности процесса фотолитографии.</dd>
+		<dt>Calibre OPCverify</dt>
+		<dd>Точное моделирование результатов оптической коррекции (Calibre nmOPC) и ее влияния на процесс фотолитографии.</dd>
+		<dt>Calibre WORKbench</dt>
+		<dd>Среда, обеспечивающая пользовательский интерфейс для запуска приложений оптической коррекции и просмотра ее результатов.</dd>
+		<dt>Calibre nmModelflow</dt>
+		<dd>Приложение для точной калибровки оптических моделей, моделей фоторезиста и моделей травления.</dd>
+		<dt>Calibre pxOPC</dt>
+		<dd>Быстрая оптическая коррекция на основе инверсных моделей пикселей.</dd>
+		<dt>Calibre pxSMO and RET selection</dt>
+		<dd>Приложение для оптимизации параметров источника освещения в фотолитографическом процессе.</dd>
+	</dl>
+	<h4>Подготовка фотошаблона</h4>
+	<dl>
+		<dt>Calibre MPCpro</dt>
+		<dd>Приложение предназначено для коррекции фотошаблона на основе заданных правил эффектов линейности, сквозного смещения, закоротки концов линий и общей плотности слоя.</dd>
+		<dt>Calibre nmMPC</dt>
+		<dd>Коррекция дозы и геометрии фотошаблона на основе моделей дозировки, экспозиции, параметров резиста и технологического процесса.</dd>
+		<dt>Calibre MPCverify</dt>
+		<dd>Верифицирует результаты коррекции фотошаблона на основе библиотеки моделей.</dd>
+	</dl>
+";html;calibre;500;;;Да;;Физическая верификация ИС;;
+calibre_nmdrc_recon;Calibre nmDRC Recon;79;Y;;;;;text;/upload/iblock/ba6/calibre-nmdrc-recon-product-promo-640x480.jpg;"<p>
+ <img alt=""calibre_nm_drc_recon.png"" src=""/upload/medialibrary/129/calibre_nm_drc_recon.png"" title=""calibre_nm_drc_recon.png"" width=""487"" height=""180"" align=""right""> <strong>Calibre nmDRC-Recon</strong> реализует технологии “ранней” проверки нарушения правил проектирования и предназначен для работы с блоками, макросами и всем проектом в целом на этапе, когда они находятся в незавершенном промежуточном состоянии. При этом верифицируются и корректируются лишь определенные классы ошибок, которые можно выявить уже на текущем состоянии процесса проектирования. Это позволяет снизить нагрузку на последующие этапы верификации (signoff) и сократить общее время выхода на производство кристалла.
+</p>";html;calibre_nmdrc_recon;500;;/upload/iblock/ae7/not know.svg;Нет;;Физическая верификация ИС;;
+80;Calibre nmLVS Recon;80;Y;;;;;text;/upload/iblock/366/calibre-nmlvs-recon-top-as21148244-640x480.jpg;"<p>
+<b>Calibre nmLVS-Recon</b> реализует технологии “ранней” проверки нарушения LVS и предназначен для работы с блоками, макросами и всем проектом в целом на этапе, когда они находятся в незавершенном промежуточном состоянии. При этом верифицируются и корректируются лишь определенные классы ошибок, которые можно выявить уже на текущем состоянии процесса проектирования. Это позволяет снизить нагрузку на последующие этапы верификации (signoff) и сократить общее время выхода на производство кристалла.
+</p>";html;calibre_nmlvs_recon;500;;/upload/iblock/ae7/not know.svg;Нет;;Физическая верификация ИС;;
+81;Calibre PERC;81;Y;;;;;text;/upload/iblock/978/calibre-perc-top-is1176099774-640x480.jpg;"<p>
+ <b>Calibre PERC</b> предназначен для анализа и оптимизации надежности ИС путем обнаружения различных электрических эффектов – например, определение недопустимого падения напряжения в цепях распределения питания, локализация зон возможного электростатического разряда, зоны перехода сигналов между зонами с различными номиналами напряжения питания, оценка величины сопротивления между двумя точками, оценка плотности тока в сигнальных линиях и шинах питания, анализ зависимости геометрических правил (DRC) от величины напряжения, и многое другое. Calibre PERC одновременно анализирует нетлист и топологию проекта (GDS), что позволяет учитывать как схемные, так и физические нештатные ситуации, повышая таким образом качество верификации и надежность ИС. Модуль интегрирован с другими приложениями Calibre, в том числе и для работы в сторонних маршрутах проектирования.
+</p>
+<img alt=""PERC.png"" src=""/upload/medialibrary/ea6/PERC.png"" title=""PERC.png"" width=""781"" height=""549"">
+";html;calibre_perc;500;;/upload/iblock/ae7/not know.svg;Нет;;Физическая верификация ИС;;
+calibre_mdp;Calibre OPC;31;Y;;;;;text;/upload/iblock/792/calibre-nmopc-product-overlay-640x360.jpg;"<p>
+	Элементы микросхем становятся всё меньше и меньше. Процессы фотолитографии становятся всё сложнее и требуют обработки всё большего количества данных. Вычислительные методы коррекции фотолитографии платформы Calibre предлагают лучшие в классе точность, быстродействие и стоимость владения.
+</p>
+<dl>
+	<dt>Calibre nmOPC</dt>
+	<dd>Оптическая коррекция топологии для повышения разрешающей способности процесса фотолитографии.</dd>
+	<dt>Calibre nmSRAF</dt>
+	<dd>Включение в топологию дополнительных элементов (SRAF) для повышения разрешающей способности процесса фотолитографии.</dd>
+	<dt>Calibre OPCverify</dt>
+	<dd>Точное моделирование результатов оптической коррекции (Calibre nmOPC) и ее влияния на процесс фотолитографии.</dd>
+	<dt>Calibre WORKbench</dt>
+	<dd>Среда, обеспечивающая пользовательский интерфейс для запуска приложений оптической коррекции и просмотра ее результатов.</dd>
+	<dt>Calibre nmModelflow</dt>
+	<dd>Приложение для точной калибровки оптических моделей, моделей фоторезиста и моделей травления.</dd>
+	<dt>Calibre pxOPC</dt>
+	<dd>Быстрая оптическая коррекция на основе инверсных моделей пикселей.</dd>
+	<dt>Calibre pxSMO and RET selection</dt>
+	<dd>Приложение для оптимизации параметров источника освещения в фотолитографическом процессе.</dd>
+</dl>
+<p>
+	Более подробную информацию о конкретных продуктах можно получить <a href=""mailto:support@megratec.ru"">по запросу</a>
+</p>";html;calibre_opc;500;;;;;Подготовка производства ИС;;
+calibre_mpc;Calibre MPC;32;Y;;;;;text;/upload/iblock/517/calibrempc640x360-5E2C5919.jpg;"<p>Для коррекции фотошаблона в семействе Calibre существует целое семейство пакетов на основе правил и моделей, позволяющих скорректировать систематические ошибки фотолитограии и добиться того, чтобы размеры элементов оставались в пределах спецификации.</p>
+<dl>
+<dt>Calibre MPCpro</dt>
+<dd>Приложение предназначено для коррекции фотошаблона на основе заданных правил эффектов линейности, сквозного смещения, закоротки концов линий и общей плотности слоя.</dd>
+<dt>Calibre nmMPC</dt>
+<dd>Коррекция дозы и геометрии фотошаблона на основе моделей дозировки, экспозиции, параметров резиста и технологического процесса.</dd>
+<dt>Calibre MPCverify</dt>
+<dd>Верифицирует результаты коррекции фотошаблона на основе библиотеки моделей.</dd>
+</dl>
+<p>
+	Более подробную информацию о конкретных продуктах можно получить <a href=""mailto:support@megratec.ru"">по запросу</a>
+</p>";html;calibre_mpc;500;;;;;Подготовка производства ИС;;
+calibre_mdp;Calibre MDP;33;Y;;;;;text;/upload/iblock/75f/calibre-mdp-fs-640x360.jpg;"<p>Инструменты пакета Calibre для подготовки фотошаблона позволяют верифицировать и преобразовывать формат данных маски фотошаблона. Calibre MDP это полный маршрут для создания и верификации маски, с возможностью иерархической обработки геометрий и проверки правильности создания маски.</p>
+<dl>
+<dt>Calibre FRACTURE</dt>
+<dd>Приложение экспортирует данные непосредственно в форматах для производства фотошаблона. Поддерживаются форматы MEBES, JEOL, Micronic, NuFlare VSB and MBF, OASIS.MSK, OASIS.MBW.</dd>
+<dt>Calibre MDPverify</dt>
+<dd>Верифицирует выходные файлы фотошаблона на соответствие исходным GDSII и OASIS. Позволяет отследить изменения вплоть до выходных файлов фотошаблона.</dd>
+<dt>Calibre MDPview</dt>
+<dd>Обеспечивает просмотр данных в форматах GDSII и OASIS, а также в выходных форматах фотошаблона.</dd>
+<dt>Calibre MASKOPT</dt>
+<dd>Приложение позволяет снизить стоимость и время изготовления фотошаблона за счет предварительной обработки на этапе разбивки данных для экспорта в формат фотошаблона.</dd>
+<dt>Calibre MDPmerge</dt>
+<dd>Обеспечивает возможность слияния областей при разбивке данных в формате NuFlare VSB11</dd>
+<dt>Calibre MAPI</dt>
+<dd>Приложение расширяет программный язык Tcl, встроенный в Calibre MDPview, вводя специальные функции экстракции и валидации информации о фотошаблоне для метрологических операций.</dd>
+</dl>
+<p>
+	Более подробную информацию о конкретных продуктах можно получить <a href=""mailto:support@megratec.ru"">по запросу</a>
+</p>";html;calibre_mdp;500;;;;;Подготовка производства ИС;;
+calibre_workbench;Calibre Workbench;34;N;;;;;text;;;text;calibre_workbench;500;;;;;Подготовка производства ИС;;
+tessent_testkompress;Tessent TestKompress;35;Y;;;;;text;;"<p>
+	 Tessent® TestKompress® обеспечивает максимальное качество детерминированных тестов при минимальной стоимости тестирования. Решение использует патентованый алгоритм сжатия внутри чипа для создания наборов тестовых последовательностей, позволяющих существенно сократить время тестирования и объём данных, загружаемых в чип тестовым оборудованием.
+</p>
+<h2>
+Возможности и преимущества </h2>
+<ul type=""disc"">
+	<li>Всестороннее тестирование цифровой логики.</li>
+	<li>Быстрая генерация тестовых последовательностей высокопроизводительными алгоритмами ATPG и распределённые вычисления.</li>
+	<li>Широкий набор моделей неисправностей, включающий константные, переходные, малую задержку и пр., обеспечивает наиболее полное обнаружение дефектов.</li>
+</ul>
+<ul type=""disc"">
+	<li>Опция Automotive-grade ATPG позволяет получать чипы без единого дефекта, обнаруживая дефекты внутри ячеек, между соседними ячейками и в межсоединениях.</li>
+	<li>Поддерживает стратегии тестирования с малым количеством задействованных пинов (начиная с одного канала сканирования).</li>
+	<li>Ошибки можно анализировать в <a href=""https://www.mentor.com/products/silicon-yield/products/diagnosis"">Tessent Diagnosis</a> и <a href=""/product/tessent_yieldinsight"">Tessent YieldInsight</a>.</li>
+</ul>
+<p>
+</p>";html;tessent_testkompress;500;;;;;Тестирование и диагностика ИС;;
+tessent_mbist;Tessent MBIST;36;Y;;;;;text;;"<p>
+	 Пакет Tessent® MemoryBIST это законченное решение для тестирования, диагностики и восстановления встроенных блоков памяти. Решение имеет иерархическую архитектуру, что позволяет добавлять возможности самотестирования и самовосстановления как в отдельных блоках, так и на верхнем уровне проекта.
+</p>
+<p>
+	 Tessent MemoryBIST это автоматизированный маршрут, обеспечивающий проверку правил проектирования, планирование тестов, интеграцию и верификацию на RTL или вентильном уровнях.
+</p>
+<h2>
+Возможности и преимущества </h2>
+<ul type=""disc"">
+	<li>Быстрая интеграция IP блоков самотестирования и самовосстановления, использование уже существующих блоков для тестирования встроенной памяти, ускоренный выход на рынок.</li>
+	<li>Планирование алгоритма во время разработки позволяет улучшить качество и оптимизировать тестирование.</li>
+	<li>Перепрограммирвоание алгоритма на уже готовых кристаллах обеспечивает полный контроль над временем и качеством тестов.</li>
+	<li>Встроенный построчный и постолбцовый анализ сокращает время тестирования восстанавливаемых блоков памяти.</li>
+	<li>Встроенная в чип система восстановления на базе электронных предохранителей поддерживает любые блоки памяти с возможностью восстановления.</li>
+	<li>Поддерживает любое количество доменов питания, распределённых между любым количеством физических блоков.</li>
+</ul>
+<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/tessent_mbist.pdf"" target=""_blank"">Скачать описание продукта</a></h3>
+ <br>";html;tessent_mbist;500;;/upload/iblock/aef/method-draw-image.svg;Нет;;Тестирование и диагностика ИС;;
+tessent_lbist;Tessent LBIST;37;Y;;;;;text;;"<p>
+	 Tessent® LogicBIST – это лидер в отрасли решений для встроенного самотестирования логических компонентов интегральных схем. Решение включает в себя уникальный функционал, направленный на тестирование систем на кристалле, созданных по нанометровым технологиям, который позволяет уменьшить стоимость тестирования, ускорить выход на рынок, при этом обеспечив максимальное качество тестов.
+</p>
+<p>
+	 Tessent LogicBIST это полностью иерархическое решение, обеспечивающее стопроцентную портируемость тестов для отдельных блоков, а также повторное использоание тестов на протяжении всего жизненного цикла продукта.
+</p>
+<h2>
+Основные преимущества </h2>
+<ul type=""disc"">
+	<li>Высокий процент покрытия переходных нарушений, контроль целостности сигнала и высокий процент выявления немоделируемых дефектов уменьшает процент отказов готовых изделий.</li>
+	<li>Быстрое добавление структур самотестирования логики, уменьшение времени отладки тестов и возможность многократного использования встроенной тестовой логики сокращают время выхода на рынок.</li>
+	<li>Минимальные требования к тестовому оборудованию снижают стоимость тестирования. Патентованная архитектура распределения тестов по времени для эффективного их применения и управления потребляемой мощностью.</li>
+	<li>Широкие возможности автоматизации на RTL или вентильном уровне для быстрой интеграции тестов. Высокая скорость применения псевдослучайных тестовых последовательностей для обеспечения высокого тестового покрытия.</li>
+	<li>Встроенная поддержка иерархии обеспечивает полную портируемость тестов для блоков.</li>
+	<li>Обеспечивает 100% многократное использование тестов на протяжение всего жизненного цикла продукта.</li>
+</ul>";html;tessent_lbist;500;;;;;Тестирование и диагностика ИС;;
+tessent_scanpro;Tessent ScanPro;38;Y;;;;;text;;"<p>
+	 Tessent<sup>®</sup> ScanPro включает в себя весь функционал Tessent Scan плюч расширенные возможности, позволяющие максимизировать производительность продуктов Tessent TestKompress® и Tessent FastScan™.
+</p>
+<p>
+	 Tessent ScanPro испольщует технологию тестовых точек VersaPoint™, что улучшает и сжатие ATPG-последовательностей, и тестовое покрытие алгоритмов самотестирования логики.
+</p>
+<h2>
+Возможности и преимущества </h2>
+<ul type=""disc"">
+	<li>Включает в себя все возможности Tessent Scan по добавлению сканирующей логики</li>
+	<li>Улучшает сжатие ATPG-последовательностей и тестовое покрытие алгоритмов самотестирования логики за счёт использования технологии VersaPoint™</li>
+	<li>Позволяет вставлять логику управления синхросигналом (OCC)</li>
+	<li>Развитые возможности по интроспекции и редактированию проекта в Tessent Shell</li>
+	<li>Упрощает и ускоряет интеграцию сканирующей логики в проект</li>
+	<li>Увеличивает эффективность решения для сканирования и сжатия тестовых последовательностей</li>
+	<li>Увеличивает производительность труда, объединяя все действия, связанные с DFT в единой оболочке</li>
+</ul>
+<p>
+</p>";html;tessent_scanpro;500;;;;;Тестирование и диагностика ИС;;
+tessent_ijtag;Tessent IJTAG;39;Y;;;;;text;;"Для выполнения комплекса требований при тестировании набора разнородных IP блоков, был разработан промышленный стандарт IEEE 1687 (IJTAG). Он конкретизирует язык для описания интерфейса блока и то, как блоки соединяются между собой. Он также определяет язык для описания последовательностей для управления IP блоком. IEEE 1687 чётко разграничивает то, что должно быть стандартизировано и то, что лучше оставить на усмотрение разработчикам ПО.
+<p>
+	 Tessent® IJTAG это первый продукт в данной отрасли, использующий стандарт IEEE 1687. Функционал Tessent IJTAG простирается далеко за рамки базовой реализации стандарта IEEE 1687. Он упрощает процесс объединения произвольного количества IEEE 1687 совместимых IP блоков в интегрированную иерархическую сеть и передачи команд в блоки из единой точки доступа на верхнем уровне проекта. Он обеспечивает маршрут, в котором пользователю не нужно знать детали стандарта IEEE 1687, поскольку инструмент сам найдёт оптимальное решение, соответствующее этому стандарту.
+</p>
+<h2>
+Ключевые преимущества </h2>
+<ul type=""disc"">
+	<li>Единая процедура использования встроенных IEEE 1687 совместимых IP блоков вне зависимости от источника их получения</li>
+	<li>Шире выбор встроенных IP</li>
+	<li>Ускорение разработки за счёт более быстрого внедрения IEEE 1687 совместимых IP</li>
+	<li>Минимальное количество тактов для доступа к блоку внутри реконфигурируемой сети</li>
+	<li>Единый маршрут и общая сеть для доступа к IP-блокам Tessent и любым IEEE 1687 совместимым IP.</li>
+</ul>
+<h2>
+Модели использования </h2>
+<p>
+	 Tessent IJTAG будет полезен всем членам команды разработки.
+</p>
+<h3>
+Поставщики IP блоков </h3>
+<p>
+	 Могут использовать Tessent IJTAG для обеспечения соответствия своих блоков стандарту. Они также могут верифицировать функционал блоков при помощи тестбенчей для моделирования, генерируемых Tessent IJTAG
+</p>
+<h3>
+Инженеры, отвечающие за диагностику и анализ неисправностей </h3>
+<p>
+	 Используют Tessent IJTAG для доступа к IP-блокам глубоко внутри проекта. С Tessent IJTAG можно быстро сгенерировать дополнительные входные сигналы для любого блока в сети IJTAG, даже без знания, как именно он туда встроен и не имея его исходников.
+</p>
+<h3>
+Разработчики </h3>
+<p>
+	 Могут интегрировать в свой проект IEEE 1687 совместимые IP из различных источников, без необходимости вручную создавать файлы сети IJTAG для соединения блоков. Tessent IJTAG создаёт сеть IJTAG полностью автоматически, поэтому разработчики могут сосредоточиться на проекте, оставив заботу о IJTAG программе.
+</p>
+<h3>
+Тестировщики </h3>
+<p>
+	 Используйте Tessent IJTAG для сборки и запуска тестов для всех совместимых IP блоков, соединённых в сеть IJTAG. Tessent IJTAG стремиться выполнить описанные тесты за минимально возможное количество тактов.
+</p>
+<p>
+</p>";html;tessent_ijtag;500;;;;;Тестирование и диагностика ИС;;
+tessent_ijtag;Tessent SiliconInsight;40;Y;;;;;text;;"<p>
+	 Tessent® SiliconInsight® в среде Tessent Shell это автоматизированная интерактивная среда для доводки тестов и получения характеристик устройств, содержащих структуры Tessent ATPG, EDT, BIST, и/или IJTAG.
+</p>
+<p>
+	 Tessent SiliconInsight существенно увеличивает продуктивность разработчиков чипов и тестировщиков во время отладки и валидации, сокращая время выхода продукта на рынок. Решение работает на стенде и подключается к любой отладочной или настроечной плате, контролируя до 120 пинов устройства.
+</p>
+<h2>
+Возможности и преимущества </h2>
+<ul type=""disc"">
+	<li>Увеличение продуктивности во время валидации и отладки устройства</li>
+	<li>Валидация тестовых векторов до изготовления прототипа при помощи SimDUT</li>
+	<li>ATE-Connect позволяет осуществлять интерактивную отладку IJTAG и диагностику MBIST на локальном или удалённом тестовом оборудовании.</li>
+	<li>Запуск тестов и сбор данных для произвольного набора и порядка самотестирующихся блоков в устройстве.</li>
+	<li>Генерация побитовых карт памяти из данных, полученных из тестового оборудования для устройств с Tessent MemoryBIST.</li>
+</ul>";html;tessent_siliconinsight;500;;;;;Тестирование и диагностика ИС;;
+tessent_yieldinsight;Tessent YieldInsight;41;Y;;;;;text;;"<p>
+	 Значительно упрощает поиск причин уменьшения выхода годных
+</p>
+<p>
+	 Tessent® YieldInsight® проводит статический анализ диагностических данных чтобы выделить и идентифицировать систематические отказы ещё до анализа неисправностей.
+</p>
+<p>
+	 Основная задача Tessent YieldInsight – понять и идентифицировать причины, влияющие на выход годных, по данным сканирований. Используя специализированные алгоритмы интеллектуального анализа данных, продукт отделяет шум от данных диагностики для определения истинных причин отказов, поиска особенностей, систематически ограничивающих выход годных и выбора лучших кандидатов для анализа неисправностей. Это существенно ускоряет поиск истинных причин снижения выхода годных.
+</p>
+<h2>
+Возможности и преимущества </h2>
+<ul type=""disc"">
+	<li>Значительно упрощает поиск причин уменьшения выхода годных.</li>
+	<li>Отделяет шум от данных диагностики для определения истинных причин отказов </li>
+	<li>Помогает выбрать наиболее релевантные устройства для анализа неисправностей.</li>
+</ul>";html;tessent_yieldinsight;500;;;;;Тестирование и диагностика ИС;;
+tessent;Tessent;75;Y;;;;Тестирование и диагностика ИС;text;/upload/iblock/64f/tessent-test-product-overlay-as95023450-640x360.jpg;"<div>
+<img alt=""tessent-sls-wp-640x360.jpg"" src=""/upload/medialibrary/a66/tessent-sls-wp-640x360.jpg"" title=""tessent-sls-wp-640x360.jpg"" width=""448"" height=""252"" align=""right"">
+	<p>
+ <strong>
+		Пакет Tessent предлагает целый набор различных средств для внедрения в микросхемы цепей тестирования и самотестирования комбинационной логики. </strong>
+	</p>
+	<p>
+		 В маршрут Tessent входит целый спектр различных инструментов, которые можно разделить на две основные группы:
+	</p>
+	<ul class=""list-check"">
+		<li>Набор программ для тестирования и оценки тестопригодности логики, памяти и аналого-цифровых устройств, анализа тестов и повышения выхода годных</li>
+		<li>Решения для добавления в систему на кристалле аппаратных блоков для анализа и самотестирования.</li>
+	</ul>
+	<h3>Tessent Test Solutions</h3>
+	<p>
+                 Tessent объединяет в единый маршрут семейства лучших в своём классе решений для каждой дисциплины, что позволяет достичь 100% покрытия всего чипа.
+	</p>
+	<p>
+ <strong>Решения Tessent</strong>
+	</p>
+	<dl>
+		<dt>
+		Тестирование логики </dt>
+		<dd>
+		Mentor Graphics предлагает наиболее мощный в отрасли пакет решений для тестирования логики с более чем двадцатилетней историей успешного тестирования тысяч партий микросхем с использованием сжатия и безвекторного подходов. </dd>
+		<dt>
+		Тестирование памяти </dt>
+		<dd>
+		Решения Tessent для тестирования памяти дают широкие возможности для тестирования и диагностики, чтобы выполнить требования для новых технологий производства, а так же для анализа и самовосстановления блоков памяти. </dd>
+		<dt>
+		Тестирование аналого-цифровых устройств </dt>
+		<dd>
+		Аналого-цифровые решения Tessent не привязаны к конкретным производителям микросхем или тестового оборудования и призваны решить проблему растущего количества SerDes интерфейсов и PLL в современных проектах систем на кристалле</dd>
+		<dt>
+		Оценка готовых микросхем </dt>
+		<dd>
+		Маршрут Tessent включает в себя продукты для увеличения продуктивности во время валидации микросхем и выхода в серию, обеспечивая решения для тестирования, характеризации, анализу выхода годных и анализу отказов. </dd>
+		<dt>
+		Tessent Connect </dt>
+		<dd>
+		Tessent Connect сокращает время и стоимость реализации DFT путём оптимальной автоматизации внутри Tessent Shell для иерархических проектов. </dd>
+	</dl>
+	<h3>Встроенная аналитика</h3>
+	<p>
+		 Tessent® Embedded Analytics это целый набор IP блоков и ПО для обеспечения безопасности и функциональной надёжности, полевого и лабораторного мониторинга и оптимизации производительности, а также настройки и отладки процесса производства. Наше портфолио включает в себя настраиваемые аппаратные блоки для обеспечения кибербезопасности и надёжности, блоки неинтрузивного мониторинга основной логики, мониторинга основных шин и соединений с учётом информации о транзакциях, IP блоки для быстрой передачи данных, позволяющие получать и записывать большие объёмы данных, а также ПО для обработки и анализа этих данных.
+	</p>
+	<p>
+ <strong>Основные функции продукта</strong>
+	</p>
+	<ul class=""list-check"">
+		<li>IP блоки для мониторинга и аналитики</li>
+		<ul>
+			<li>Поставляются в виде параметризуемых блоков</li>
+		</ul>
+		<li>Аппаратная кибербезопасность</li>
+		<ul>
+			<li>Мгновенное определение ненормального поведения</li>
+			<li>Смягчение и предотвращение распространения угроз</li>
+			<li>Сохранение данных, определение профиля угроз</li>
+		</ul>
+		<li>Функциональная надёжность</li>
+		<ul>
+			<li>Отсутствие привязки к конкретным производителям</li>
+			<li>Верификация и валидация для соответствия стандартам</li>
+		</ul>
+		<li>Постоянная оптимизация производительности</li>
+		<ul>
+			<li>Датацентры, хранилища и пр.</li>
+			<li>Превентивное обслуживание / анализ отказов</li>
+		</ul>
+		<li>Мощная среда разработки и аналитическое ПО</li>
+		<ul>
+			<li>Поддержка оптимизации под разные CPU</li>
+			<li>Визуализация и анализ данных</li>
+		</ul>
+		<li>Мониторинг шин с учётом информации о протоколах</li>
+		<ul>
+			<li>AXI, ACE, ACElite, OCP, CHI и другие</li>
+		</ul>
+		<li>Богатая инфраструктура сообщений</li>
+		<li>On- и off-chip интерфейсы</li>
+		<ul>
+			<li>Поддержка систем отладки от поставщиков (CoreSight, PDTrace)</li>
+			<li>IEEE1149, SWD-style, Aurora, SerDes, USB2</li>
+			<li>Ethernet, PCIe, USB3</li>
+		</ul>
+	</ul>
+</div>";html;tessent;500;;;Да;;Тестирование и диагностика ИС;;
+hdl_designer;HDL Designer;42;Y;;;;;text;/upload/iblock/8c2/hds.png;"<h2>
+Визуализация сложных RTL проектов </h2>
+<p>
+	 HDL Designer объединяет возможности глубокого анализа, продвинутые редакторы и полноценную систему управления проектом и маршрутом, являясь мощной средой HDL разработки, увеличивающей продуктивность отдельных разработчиков и команд разработки (локальных или удалённых) и делает процесс разработки повторяемым и предсказуемым.
+</p>
+<h2>
+Анализ </h2>
+<p>
+	 HDL Designer позволяет разработчикам анализировать, оценивать и визуализировать сложные RTL проекты, предоставляя анализ целостности кода, связности, оценку качества HDL кода и визуализацию проекта.
+</p>
+<h2>
+Создание </h2>
+<p>
+	 Рука об руку с анализом кода идёт его создание. HDL Designer предоставляет разработчикам большой набор продвинутых редакторов для ускорения разработки: редактор интерфейсных таблиц (IBD) и блок-схем, конечных автоматов, таблиц истинности, функциональных схем и алгоритмических автоматов. В дополнение к этим редакторам в HDL Designer также есть EMACS/vi-совместимый текстовый редактор с подсветкой синтаксиса.
+</p>
+<h2>
+Управление </h2>
+ Помимо анализа и создания проекта, управление<br>
+ проектом это третья важная задача, с которой сталкиваются разработчики. Помимо<br>
+ управления данными, команды должны управлять проектом на протяжении всего<br>
+ процесса разработки. HDL Designer решает проблему управления проектом, обеспечивая разработчика<br>
+интерфейсами к другим инструментам маршрута и системам управления версиями. HDL Designer также упрощает процесс документирования проекта благодаря поддержке HTML, OLE, печати и экспорту графики.";html;hdl_designer;500;;;;;Проектирование FPGA;;
+questa;Questa;43;N;;;;;text;/upload/iblock/43d/QUESTA.jpg;"<p>
+	 Платформа верификации Questa® меняет процесс верификации, существенно увеличивая продуктивность верификации и более эффективно управляя ресурсами благодаря нескольким мощным технологиям, а тесная интеграция с платформой эмуляции Veloce® позволяют Questa справляться с вызовами растущей сложности современных систем на кристалле.
+</p>
+<ul type=""disc"">
+	<li>Интегрирует несколько точечных инструментов в гибкие открытые маршруты, использующие широкий арсенал решений для верификации</li>
+	<li>Проводит декомпозицию задачи и применяет лучший инструмент, такой как CDC верификация, формальная верификация или аналого-цифровая эмуляция, для её решения</li>
+	<li>Обеспечивает высокую производительность/ёмкость отладки в тесной интеграции со средой отладки Visualizer Debug Environment</li>
+	<li>Помогает создавать план верификации и собирать метрики для отслеживания его прогресса, эффективно управлять ресурсами и понимать, как движется работа над проектом</li>
+</ul>";html;questa2;500;;;;;Проектирование FPGA;;
+precision_synthesis;Precision Synthesis;44;Y;;;;;text;/upload/iblock/f7e/Synthesis_Small.jpg;"Средство логического синтеза высокопроизводительных ПЛИС типа PLD и FPGA, оптимизированное с точки зрения простоты использования и высокого качества результатов.
+
+Поддерживает работу с многомилионными программируемыми системами-на-кристалле (FPSoC)последнего поколения. Precision RTL Synthesis получает входные данные о проекте в виде описания на VHDL или Verilog и реализует синтез логической схемы с учетом заданных ограничений на основе встроенных библиотек изготовителей. Пакет имеет встроенную систему статического временного анализа, возможность анализа и отладки в инкрементном режиме и интуитивный пользовательский интерфейс, позволяющий легко управлять процессом синтеза как опытному инженеру, так и новичку.
+
+Precision RTL Synthesis включает уникальный алгоритм оптимизации - Architecture Signature Extraction (A.S.E.), который автоматически выделяет в проекте наиболее критичные области, ограничивающие производительность всей системы, такие как конечные автоматы, логические пути между различными уровнями иерархии проекта или логические пути с очень большим количеством комбинационной логики. Алгоритм ASE использует эвристический анализ в автоматическом режиме для уменьшения объема проекта и увеличения его производительности без необходимости ручного вмешательства пользователя.
+
+Precision RTL Synthesis полностью интегрирован в маршрут проектирования FPGA Advantage, включающий пакеты HDL Designer и ModelSim. Поддерживаются все серии кристаллов Xilinx, Altera, Actel и Lattice.";text;precision_synthesis;500;;;;;Проектирование FPGA;;
+reqtracer;ReqTracer;45;Y;;;;;text;/upload/iblock/db0/dw7994.png;"ReqTracer отслеживает реализацию требований в ваших проектах ПЛИС и ASIC. ReqTracer упрощает и автоматизирует отслеживание ограничений от их описания в ТЗ, до реализации в HDL, синтеза и верификации.<br>
+Чёткое отслеживание реализации требований, это де-факто стандарт для 
+авиации, медицинского и военного оборудования, но это не менее важно для
+ любого сложного проекта на ПЛИС или ASIC.";html;reqtracer;500;;;;;Проектирование FPGA;;
+xpedition;Xpedition;46;Y;;;;Печатные платы;text;/upload/iblock/788/layout_only_x.png;"<div>
+	<div class=""video-right""><iframe title=""Tour Xpedition Enterprise in Seven Minutes"" src=""https://www.youtube.com/embed/iTsDqrcOPU0?feature=oembed"" allow=""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"" allowfullscreen=""true"" width=""640""  frameborder=""0"" style=""min-height: 360px"">
+	</iframe></div>
+	<p>
+ <b>Платформа Xpеdition</b> – высокопроизводительный сквозной маршрут проектирования печатных плат масштаба предприятия, обеспечивающий единую цифровую среду проектирования, разработки, анализа, подготовки к производству и управления данными. Его уникальные инструменты позволяют сократить сроки разработки более чем на 50%, значительно повысить общее качество продукта и эффективность использования ресурсов предприятия.
+	</p>
+	<h3>Схемотехническое проектирование</h3>
+	<p>
+		 Xpedition® Designer предоставляет широкие возможности схемотехнического проектирования и документирования. Простота и интуитивность при разработке схемы достигаются за счет удобных инструментов навигации, поддержки иерархического проектирования, наличия стартовой библиотеки, мощных инструментов управления атрибутами компонентов и правилами проектирования. . Высокая эффективность и производительность редактора схем обеспечиваются полной прямой и обратной аннотацией с редактором топологии, а также прямой связью с инструментами анализа целостности сигналов.
+	</p>
+	<h3>Управление инженерными данными</h3>
+	<p>
+		 В Xpedition® входит система управления инженерными данными (EDM, Engineering Data Management), которая облегчает создание и управление библиотекой компонентов и проектными данными, повышая их качество и обеспечивая целостность на протяжении всего маршрута разработки продукта. EDM не только облегчает процесс проектирования за счет использования совместной работы и повторно используемых блоков, но и интегрируется в PLM- и ERP-системы.
+	</p>
+ <img alt=""photo.jpg"" src=""/upload/medialibrary/aa7/photo.jpg"" title=""photo.jpg"" width=""410"" height=""273"" align=""left"">
+	<h3>Проектирование топологии</h3>
+	<p>
+		 Рост сложности и плотности печатных плат требует наличия в САПР инструментов строгого контроля правил проектирования (DRC). Благодаря сквозной системе ограничений (Constraint Manager) Xpedition® предоставляет инженерам наиболее эффективную методологию управляемого ограничениями сквозного маршрута разработки. Она позволяет сократить стоимость и время выхода готового продукта на рынок благодаря автоматизированному взаимодействию правил проекта между схемой и топологией, исключающему дополнительные итерации физического макетирования и доработки.
+	</p>
+	<h3>Моделирование аналоговых и смешанных цепей</h3>
+	<p>
+		 В состав пакета Xpedition® входит AMS (Analog/Mixed-Signal) - инструмент, расширяющий стандартный SPICE-анализ схем и позволяющий легко провести функциональную верификацию, исследование сценариев, оптимизацию радиоэлементов с аналоговыми/смешанными сигналами и высокоскоростных цифровых схем.
+	</p>
+	<h3>Совместная работа</h3>
+	<p>
+		 Платформа Xpedition® предлагает широкие возможности совместной работы над проектом, когда группа инженеров в реальном времени может одновременно вводить ограничения, редактировать схемы, проводить трассировку печатных плат. Ваша команда разработчиков может быть разбросана по всему земному шару - это не станет помехой для качественного проектирования.
+	</p>
+	<h3>Взаимодействие с MCAD</h3>
+	<p>
+		 Xpedition® Layout облегчает передачу проектных данных в механические САПР благодаря стандарту обмена данными ProSTEP на основе XML-протокола. С помощью этого формата MCAD- и ECAD-разработчики могут обмениваться данными между собой в любое время и с любой частотой, избегая при этом дополнительной конвертации.
+	</p>
+</div>";html;xpedition;500;;/upload/iblock/75b/tanner.svg;Да;;Проектирование систем на печатных платах;;
+pads_pro;PADS Pro;47;Y;;;;;text;/upload/iblock/6c1/PADS-640x360.png;"<div>
+<img alt=""PADS-Pro-montage.jpg"" src=""/upload/iblock/a3e/PADS-Pro-montage.jpg"" title=""PADS-Pro-montage.jpg"" width=""450"" height=""294"" align=""right"">
+<p><b>PADS Professional - это мощное, но доступное и простое в изучении решение.</b> Данный маршрут разработан так, чтобы дать опытному пользователю все необходимые возможности для разработки сложных высокоскоростных плат, но при этом имеет интуитивно-понятный интерфейс, чтобы ускорить процесс обучения новых пользователей. Полный маршрут PADS Professional позволяет вам разрабатывать, проверять и изготавливать системы на печатных платах, в том числе содержащие сложные ПЛИС. В комплект также входит ряд трансляторов для проектов и библиотек, для облегчения перехода с платформ конкурентов.
+</p>
+<h3>Схемотехническое проектирование</h3>
+<p>PADS предоставляет широкие возможности схемотехнического проектирования и описания. Простота и интуитивность при разработке схемы достигаются за счет удобных инструментов навигации, полной поддержки иерархии, наличия стартовой библиотеки, мощных инструментов управления атрибутами компонентов и правилами проектирования. Высокая эффективность и производительность редактора схем обеспечиваются полной прямой и обратной аннотацией с редактором топологии, а также прямой связью с инструментами анализа целостности сигналов.</p>
+<h3> Управление компонентами</h3>
+<p>В PADS входит система управления компонентами, где вся информация собрана в одной таблице. Это исключает наличие избыточных данных, неструктурированных библиотек и значительно экономит время. База компонентов PADS легко интегрируется с корпоративными PDM/PLM-системами.В качестве источника данных могут выступать как популярные офисные программы MicrosoftExcel®, Access®, так и мощные СУБД – SQL, OracleDatabase,Firebird и другие. Базу данных компонентов PADS можно настроить для работы географически распределенных команд разработчиков как единый источник информации о компонентах. Система управления компонентами PADS гарантирует целостность базы данных.</p>
+<h3> Проектирование топологии</h3>
+<p>Расширенные возможности топологии и трассировки PADS позволяют существенно сократить время, необходимое для проектирования. PADS обладает удобными и функциональными инструментами интерактивной трассировки для любых элементов проекта – цифровых, аналоговых, смешанных и радиочастотных. Вы можете выбирать различные параметры трассировки, включая угол проводников, обход/расталкивание препятствий, замену проложенных трасс новыми и многое другое.</p>
+<h3> Моделирование и анализ</h3>
+<p>Возможности моделирования PADS включают стандартные и расширенные виды анализа: по постоянному току, частотный анализ, исследование переходных процессов,статистический анализ методом Монте-Карло и многовариантный анализ с вариацией параметров. В PADS легко выводятся любые графики и осциллограммы, для обработки которых доступны различные инструменты. Калькулятор характеристик и средства измерений позволяют мгновенно проверять и оценивать ваш проект. Сравнение результатов проводится путем наложения графиков для разных стадий моделирования. Доступен широкий набор форматов вывода графических данных – например, вдоль временной оси, цифровые сигналы, диаграммы Смита и Боде. </p>
+<h3>Управление библиотеками</h3>
+<p>Платформа PADS включает в себя интегрированную библиотеку компонентов, обеспечивающую синхронизацию УГО и посадочного места. Такой подход исключает основную причину лишних итераций при проектировании, которые свойственны маршрутам на основе списка цепей. Но какой смысл в библиотеке, если в ней трудно найти нужный компонент? В PADS этот недостаток отсутствует: вся информация о компонентах подчиняется здесь интуитивной системе поиска и верификации в соответствии с вашим запросом.</p>
+<h3> Управление ограничениями</h3>
+<p>Рост сложности и плотности печатных плат требует наличия в САПР инструментов строгого контроля правил проектирования (DRC). Ручное документирование, трансляция и интерпретация правил разработки приводят к затягиванию сроков разработки и увеличению стоимости. Благодаря
+сквозной системе ограничений (Constraint Manager) PADS предоставляет инженерам наиболее эффективную методологию управляемого ограничениями сквозного маршрута разработки. Она позволяет снизить стоимость и время выхода готового продукта на рынок с помощьюавтоматизированного взаимодействия правил проекта между схемой и топологией.</p>
+</div>";html;pads_pro;500;;;;;Проектирование систем на печатных платах;;
+pads;PADS;48;N;;;;;text;;;text;pads;500;;;;;Проектирование систем на печатных платах;;
+hyperlynx;HyperLynx;56;Y;;;;Целостность сигналов;text;/upload/iblock/cba/hyperlynx-hero-feature-640x360.jpg;"<div>
+<img alt=""HL.jpg"" src=""/upload/iblock/7a3/HL.jpg"" title=""HL.jpg"" width=""350"" height=""350"" align=""right"">
+<h3>Целостность сигналов (SI)</h3>
+<p><b> HyperLynx®</b> - это сочетание мощных 2D, 2.5D и 3D Full-wave солверов, а также геометрических преобразователей и симуляторов, обеспечивающих достижение максимально точных результатов за минимальное время благодаря двунаправленной интеграции в Xpedition и интуитивно понятному интерфейсу. Вы получаете доступ к наиболее востребованным видам анализа даже в отсутствие специальной подготовки: использование визардов для наиболее часто встречающихся протоколов значительно облегчает задачи инженера.</p>
+ <p>Поддерживает проекты Altium® Designer, OrCAD, Allegro и CADSTAR.</p>
+<h3>Целостность питания (PI)</h3>
+<p> Анализ целостности питания, аналогично анализу целостности сигналов, проводится путем декомпозиции доменов питания. Инструменты HyperLynx позволяют определять участки чрезмерного падения напряжения, избыточной плотности тока, оптимизировать выбор фильтрующих конденсаторов и их расположение, наличие пульсаций напряжения.</p>
+ <img alt=""HyperLynxThermal.jpg"" src=""/upload/medialibrary/f9a/HyperLynxThermal.jpg"" title=""HyperLynxThermal.jpg"" width=""322"" height=""202"" align=""left"">
+<h3>Тепловой анализ платы</h3>
+<p> HyperLynx® Thermal анализирует тепловые условия на скомпонованной, частично либо полностью трассированной плате. Инструмент моделирует проводимость, конвекцию и излучение, а также создает температурные профили, градиенты и карты перегрева, позволяющие оптимизировать платы и выбор компонентов на ранних стадиях проектирования.</p>
+<h3>Sign-off верификация</h3>
+<p> Проверка электрических характеристик компоновки - это задача, которая решается инструментом HyperLynx® DRC. Традиционно подобная проверка выполняется человеком, что увеличивает вероятность пропустить ошибки, касающиеся оптимальных путей возвратных токов, целостности опорного полигона, наличия потенциальных источников шума и т.д. HyperLynx® DRC сократит время проверки до нескольких минут, определит критические ошибки и подскажет, как их исправить, а возможность создавать собственные правила расширит и без того огромный набор проверок.</p>
+<h3>Электромагнитная совместимость</h3>
+ <img alt=""HyperLynx3dem.jpg"" src=""/upload/medialibrary/06a/HyperLynx3dem.jpg"" title=""HyperLynx3dem.jpg"" width=""490"" height=""209"" align=""right"">
+<p>Технологии 3D-моделирования HyperLynx® Advanced Solvers позволяют моделировать и извлекать данные для корпусирования кристаллов и оптимизации печатных плат. Доступна экстракция S/Z/Y-параметров, RLGC, IBIS моделей, плотности тока, плоттинг электромагнитного поля, анализ индуктивности контуров и емкостных/индуктивных связей.</p>
+</div>";html;hyperlynx;500;;;Да;;Проектирование систем на печатных платах;;
+valor_npi;Valor NPI;63;Y;;;;;text;/upload/iblock/7c1/valor_dft_640x360.jpg;"<div>
+ <img alt=""valor.png"" src=""/upload/medialibrary/185/valor.png"" title=""valor.png"" width=""512"" height=""214"" align=""right"">
+	<p>
+		 Valor является первым в отрасли комплексным решением, обеспечивающим быстрый и экономически эффективный процесс вывода нового продукта на рынок (NPI). Проверка соответствия топологии ПП возможностям ваших производителей печатных плат гарантирует высочайшее качество продукции и сохранение минимально возможных расходов.
+	</p>
+	<h3>DFM-анализ параллельно с проектированием</h3>
+	<p>
+		 Позволяет разработчикам выявлять возможности скорректировать правила проектирования для повышения качества и снижения стоимости разработок. Valor® интегрируется с топологическим редактором, так что инженеры могут оптимизировать проекты с самого начала процесса разработки.
+	</p>
+	<h3>Оценка производственных рисков</h3>
+	<p>
+		 Valor® позволяет анализировать проект для выявления параметров, влияющих на надежность и процент выхода годных изделий. Корректировка этих параметров позволит грамотно управлять технологичностью и стоимостью конечного изделия.
+	</p>
+	<h3>DFM-анализ гибких и гибко-жестких ПП</h3>
+	<p>
+		 Гибкие и гибко-жесткие ПП создаются при использовании уникальных материалов и производственных процессов. Проверьте свои проекты на предмет их соответствия возможностям производителей, чтобы убедиться, что ваша конструкция оптимизирована для производства.
+	</p>
+	<h3>Проектирование и оптимизация панелей</h3>
+	<p>
+		 С помощью Valor® вы можете быстро и легко создавать панели любой конфигурации. Программное обеспечение также позволяет определить наиболее эффективный размер обрабатываемой панели для минимизации затрат на материалы.
+	</p>
+	<h3>Подготовка полной производственной модели продукта</h3>
+	<p>
+		 Создание всего пакета производственных файлов из одного инструмента позволяет <br>
+		 отправить в производство наиболее эффективную, корректную и полную <br>
+		 модель продукта.
+	</p>
+	<h3><i class=""icon-pdf""></i><a href=""/upload/datasheets/valor.pdf"" target=""_blank"">Скачать описание продукта</a></h3>
+</div>";html;valor_npi;500;;;Нет;;Проектирование систем на печатных платах;;

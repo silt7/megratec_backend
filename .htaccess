@@ -51,3 +51,8 @@ ErrorDocument 404 /404.php
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
 </IfModule>
+Redirect 301 /news/mentor_graphics /news/mentor-graphics
+Redirect 301 /news/siemens_eda /news/siemens-eda
+Redirect 301 /news/calibre_buy /news/calibre-buy
+Redirect 301 /mentor_questa /training/mentor-questa 
+Redirect 301 /place_route_aprisa /training/place-route-aprisa

@@ -8,6 +8,30 @@ $arUrlRewrite=array (
     'PATH' => '/e-store/books/reviews/index.php',
     'SORT' => 100,
   ),
+  4 => 
+  array (
+    'CONDITION' => '#^/forum/posts/(.*)#',
+    'RULE' => 'post=$1',
+    'ID' => '',
+    'PATH' => '/forum/index.php',
+    'SORT' => 100,
+  ),
+  3 => 
+  array (
+    'CONDITION' => '#^/forum/(.*)/(.*)#',
+    'RULE' => 'section=$1&topic=$2',
+    'ID' => '',
+    'PATH' => '/forum/index.php',
+    'SORT' => 100,
+  ),
+  2 => 
+  array (
+    'CONDITION' => '#^/forum/(.*)#',
+    'RULE' => 'section=$1',
+    'ID' => '',
+    'PATH' => '/forum/index.php',
+    'SORT' => 100,
+  ),
   0 => 
   array (
     'CONDITION' => '#^/rest/#',

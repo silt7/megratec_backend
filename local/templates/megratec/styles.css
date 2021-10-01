@@ -66,9 +66,174 @@ dt {
 		padding-right: 0px !important;
 	}
 }
-
+dd {
+	padding-bottom: 10px;
+}
 @media screen and (min-width: 901px) and (max-width:1600px){
 	.md-tabs-navigation.activeTabs{
 		padding-left: 5vw !important;
+	}
+}
+
+
+
+/*********** Table  **************/
+ .table-users{
+	 border: 1px solid #2e5790;
+	 border-radius: 10px;
+	 box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+	 max-width: calc(100% - 2em);
+	 margin: 1em auto;
+	 overflow: hidden;
+	 width: 800px;
+}
+ table.table-custom {
+	 width: 100%;
+}
+ table.table-custom td, table.table-custom th {
+	 color: #2e5790;
+	 padding: 10px;
+	font-weight: 500;
+}
+ table.table-custom td {
+	 text-align: center;
+	 vertical-align: middle;
+}
+ table.table-custom td:last-child {
+	 font-size: 0.95em;
+	 line-height: 1.4;
+	 text-align: left;
+}
+ table.table-custom th {
+	 background-color: #2e5790;
+	 font-weight: 600;
+	color: #fff;
+}
+ table.table-custom tr:nth-child(2n) {
+	 background-color: white;
+}
+ table.table-custom tr:nth-child(2n+1) {
+	 background-color: #2e86ff45;
+	 font-weight: 600;
+}
+ @media screen and (max-width: 700px) {
+	 table, tr, td {
+		 display: block;
+	}
+	.table-custom td:first-child {
+		 position: absolute;
+		 top: 50%;
+		 transform: translateY(-50%);
+		 width: 100px;
+	}
+	.table-custom td:not(:first-child) {
+		 clear: both;
+		 margin-left: 100px;
+		 padding: 4px 20px 4px 90px;
+		 position: relative;
+		 text-align: left;
+	}
+	.table-custom td:not(:first-child):before {
+		 color: #2e5790;
+		 content: '';
+		 display: block;
+		 left: 0;
+		 position: absolute;
+	}
+	.table-calibre td:nth-child(1):before {
+		 content: 'Физическая верификация';
+	}
+	.table-calibre td:nth-child(2):before {
+		 content: 'LVS и экстракция:';
+	}
+	.table-calibre td:nth-child(3):before {
+		 content: 'DFM:';
+	}
+	.table-calibre td:nth-child(4):before {
+		 content: 'Comments:';
+	}
+	.table-veloce td:nth-child(2):before {
+		 content: 'Моделирование:';
+	}
+	.table-veloce td:nth-child(3):before {
+		 content: 'Прототипирование на ПЛИС:';
+	}
+	.table-veloce td:nth-child(4):before {
+		 content: 'Veloce:';
+	}
+	.table-custom tr {
+		 padding: 10px 0;
+		 position: relative;
+	}
+	.table-custom tr:first-child {
+		 display: none;
+	}
+}
+ @media screen and (max-width: 500px) {
+	.table-custom td:first-child {
+		 background-color: #fff;
+		 border-bottom: 1px solid #2e5790;
+		 border-radius: 10px 10px 0 0;
+		 position: relative;
+		 top: 0;
+		 transform: translateY(0);
+		 width: 100%;
+		 font-size: 0.8em;
+		 padding-top: 0.3em;
+	}
+	.table-custom td:not(:first-child) {
+		 margin: 0;
+		 padding: 5px 1em;
+		 width: 100%;
+	}
+	.table-custom td:not(:first-child):before {
+		 font-size: 0.8em;
+		 padding-top: 0.3em;
+		 position: relative;
+	}
+	.table-custom td:last-child {
+		 padding-bottom: 1rem !important;
+	}
+	.table-custom tr {
+		 background-color: white !important;
+		 border: 1px solid #2e5790;
+		 border-radius: 10px;
+		 box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+		 margin: 0.5rem 0;
+		 padding: 0;
+	}
+	.table-users {
+		 border: none;
+		 box-shadow: none;
+		 overflow: visible;
+	}
+}
+.table-users ul{
+	text-align: left;
+}
+.table-users ul li{
+	list-style-type: none;
+}
+.table-users a{
+	color: #2e5790 !important;
+	text-decoration: underline !important;
+}
+/*********** END Table  **************/
+
+ @media screen and (max-width: 500px) {
+	 .header {
+		 background-color: transparent;
+		 color: #fff;
+		 font-size: 2em;
+		 font-weight: 700;
+		 padding: 0;
+		 text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+	}
+	 img {
+		 border: 3px solid;
+		 border-color: #daeff1;
+		 height: 100px;
+		 margin: 0.5rem 0;
+		 width: 100px;
 	}
 }
